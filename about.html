@@ -3,6 +3,13 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
+    <style>
+        @media (max-width: 767px) {
+            .mobile-hide { display: none !important; }
+            #mobile-menu.hidden { display: none !important; }
+            #mobile-menu.flex { display: flex !important; }
+        }
+    </style>
     <meta charSet="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preload" href="_next/static/media/030c76ff40bce98c-s.p.c4196caa.woff2" as="font" crossorigin=""
@@ -72,150 +79,90 @@
         <!--$-->
         <!--/$-->
     </div>
-    <div class="bg-safety-charcoal text-gray-400 py-2 text-xs hidden md:block border-b border-white/10">
+    <!-- Main Navbar -->
+    <header class="bg-white py-4 shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center gap-6"><span class="flex items-center gap-1.5"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-clock h-3.5 w-3.5 text-safety-neon-orange" aria-hidden="true">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M12 6v6l4 2"></path>
-                        </svg><span>Mon - Sat: 9:00 AM - 6:00 PM</span></span><span class="text-white/40">|</span><span
-                        class="text-gray-300">Welcome to Safety Experts!</span></div>
-                <div class="flex items-center gap-6"><a href="mailto:safetyexpertssales@gmail.com"
-                        class="flex items-center gap-1.5 hover:text-safety-neon-orange transition-colors"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-mail h-3.5 w-3.5" aria-hidden="true">
-                            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                        </svg><span>safetyexpertssales@gmail.com</span></a><span class="text-white/40">|</span><a
-                        href="tel:919811048483"
-                        class="flex items-center gap-1.5 hover:text-safety-neon-orange transition-colors"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-phone h-3.5 w-3.5" aria-hidden="true">
-                                <path
-                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                                </path>
-                        </svg><span>+91 9811048483</span></a></div>
-            </div>
-        </div>
-    </div>
-    <div class="bg-white py-4 shadow-sm z-50">
-        <div class="container mx-auto px-4">
-            <div class="flex items-center justify-between gap-6">
+            <div class="flex items-center justify-between gap-4">
                 <a class="flex items-center shrink-0" href="index.html">
-                    <img src="assets/logo.jpg" alt="Safety Experts" class="h-16 w-auto" />
+                    <img src="assets/logo.jpg" alt="Safety Experts" class="h-10 md:h-16 w-auto" />
                 </a>
-                <form class="hidden md:flex flex-1 max-w-2xl">
-                    <div class="relative flex w-full">
-                        <div class="relative">
-                            <button id="category-btn" type="button"
-                                class="flex items-center gap-2 h-12 px-4 bg-gray-100 border-2 border-r-0 border-gray-300 rounded-l-lg text-sm text-gray-700 hover:bg-gray-200 transition-colors whitespace-nowrap">
-                                All Categories<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-chevron-down h-4 w-4" aria-hidden="true">
-                                    <path d="m6 9 6 6 6-6"></path>
-                                </svg>
-                            </button>
-                            <!-- Dropdown Menu -->
-                            <div id="category-menu" class="absolute top-full left-0 w-64 bg-white shadow-2xl rounded-b-xl border border-gray-100 hidden z-[100]">
-                                <div class="p-2">
-                                    <div class="px-4 py-2 text-[10px] font-black text-gray-400 uppercase tracking-widest">Personal Protection</div>
-                                    <a href="products.html?filter=ppe-head" class="block px-4 py-2 text-sm font-bold text-gray-700 hover:bg-safety-neon-orange hover:text-white rounded-lg transition-colors">Head Protection</a>
-                                    <a href="products.html?filter=ppe-hand" class="block px-4 py-2 text-sm font-bold text-gray-700 hover:bg-safety-neon-orange hover:text-white rounded-lg transition-colors">Hand Protection</a>
-                                    <a href="products.html?filter=ppe-foot" class="block px-4 py-2 text-sm font-bold text-gray-700 hover:bg-safety-neon-orange hover:text-white rounded-lg transition-colors">Foot Protection</a>
-                                    <a href="products.html?filter=ppe-body" class="block px-4 py-2 text-sm font-bold text-gray-700 hover:bg-safety-neon-orange hover:text-white rounded-lg transition-colors">Body Protection</a>
-                                    
-                                    <div class="px-4 py-2 mt-2 text-[10px] font-black text-gray-400 uppercase tracking-widest border-t border-gray-50">Industrial & Road</div>
-                                    <a href="products.html?filter=road-safety" class="block px-4 py-2 text-sm font-bold text-gray-700 hover:bg-safety-neon-orange hover:text-white rounded-lg transition-colors">Road Safety</a>
-                                    <a href="products.html?filter=industrial-safety" class="block px-4 py-2 text-sm font-bold text-gray-700 hover:bg-safety-neon-orange hover:text-white rounded-lg transition-colors">Industrial Safety</a>
-                                    
-                                    <div class="px-4 py-2 mt-2 text-[10px] font-black text-gray-400 uppercase tracking-widest border-t border-gray-50">Emergency</div>
-                                    <a href="products.html?filter=medical-emergency" class="block px-4 py-2 text-sm font-bold text-gray-700 hover:bg-safety-neon-orange hover:text-white rounded-lg transition-colors">Emergency Response</a>
-                                </div>
+
+                <!-- Desktop Search Bar -->
+                <div class="hidden md:flex flex-1 max-w-lg mx-6 lg:mx-12">
+                    <form action="products.html" method="GET" class="relative w-full flex">
+                        <div class="relative flex-1">
+                            <input type="search" name="search" placeholder="Search for safety products..." class="w-full h-12 bg-gray-50 border border-gray-200 rounded-l-xl py-3 px-5 pl-12 focus:outline-none focus:border-safety-neon-orange transition-all text-sm font-bold text-safety-charcoal">
+                            <div class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
                             </div>
                         </div>
-                        <input type="search" class="flex w-full bg-transparent py-1 shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-12 flex-1 rounded-none rounded-r-none border-2 border-gray-300 focus:border-safety-neon-orange text-sm px-4" placeholder="Search for safety equipment..." value="" />
-                        <button type="submit"
-                            class="flex items-center justify-center h-12 w-14 bg-safety-neon-orange hover:bg-safety-neon-orange/90 text-white rounded-r-lg transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-search h-5 w-5" aria-hidden="true">
-                                <path d="m21 21-4.34-4.34"></path>
-                                <circle cx="11" cy="11" r="8"></circle>
-                            </svg>
-                        </button>
-                    </div>
-                </form>
-                <div class="hidden md:flex items-center gap-5">
+                        <button type="submit" class="h-12 bg-safety-neon-orange text-white text-xs font-bold px-6 rounded-r-xl hover:bg-safety-charcoal transition-colors shadow-lg shadow-safety-neon-orange/20">SEARCH</button>
+                    </form>
                 </div>
-                <button id="mobile-menu-btn"
-                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 w-9 md:hidden"
-                    aria-label="Menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-menu h-6 w-6" aria-hidden="true">
-                        <path d="M4 5h16"></path>
-                        <path d="M4 12h16"></path>
-                        <path d="M4 19h16"></path>
-                    </svg>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-6 lg:gap-8">
+                    <a href="index.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">Home</a>
+                    <a href="about.html" class="text-sm font-bold text-safety-neon-orange transition-colors uppercase tracking-wider">About</a>
+                    <a href="products.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">Products</a>
+                    <a href="brands.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">Brands</a>
+                    <a href="contact.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">Contact</a>
+                    <a href="contact.html" class="px-6 py-2.5 bg-safety-neon-orange text-white text-sm font-bold rounded-lg hover:bg-safety-charcoal transition-all shadow-lg shadow-safety-neon-orange/20 uppercase tracking-wider">Get Quote</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 md:hidden hover:text-safety-neon-orange transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
                 </button>
             </div>
         </div>
-    </div>
+    </header>
+
     <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu" class="fixed inset-0 bg-safety-charcoal/95 z-[200] hidden flex-col p-8 transition-all duration-300">
-        <div class="flex justify-between items-center mb-10">
-            <img src="assets/logo.jpg" alt="Logo" class="h-12 w-auto bg-white p-1 rounded" />
-            <button id="close-menu" class="text-white hover:text-safety-neon-orange transition-colors">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[1000] hidden flex-col transition-all duration-300">
+        <div class="flex justify-between items-center p-6 border-b border-gray-100">
+            <img src="assets/logo.jpg" alt="Logo" class="h-10 w-auto" />
+            <button id="close-menu" class="p-2 text-gray-700 hover:text-safety-neon-orange transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
             </button>
         </div>
-        <nav class="flex flex-col gap-6">
-            <a href="index.html" class="text-2xl font-bold text-white hover:text-safety-neon-orange transition-colors">Home</a>
-            <a href="about.html" class="text-2xl font-bold text-white hover:text-safety-neon-orange transition-colors">About Us</a>
-            <a href="products.html" class="text-2xl font-bold text-white hover:text-safety-neon-orange transition-colors">Products</a>
-            <a href="brands.html" class="text-2xl font-bold text-white hover:text-safety-neon-orange transition-colors">Brands</a>
-            <a href="contact.html" class="text-2xl font-bold text-white hover:text-safety-neon-orange transition-colors">Contact</a>
-        </nav>
-        <div class="mt-auto pt-10 border-t border-white/10">
-            <a href="tel:919811048483" class="flex items-center gap-3 text-white font-bold mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-safety-neon-orange"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                +91 9811048483
-            </a>
-            <p class="text-gray-500 text-xs font-medium">Safety Experts - Delhi NCR</p>
+        <!-- Mobile Search -->
+        <div class="px-8 mt-4">
+            <form action="products.html" method="GET" class="relative">
+                <input type="search" name="search" placeholder="Search products..." class="w-full bg-gray-50 border border-gray-200 rounded-xl py-3 px-4 focus:outline-none focus:border-safety-neon-orange transition-all text-sm font-bold">
+                <button type="submit" class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                </button>
+            </form>
         </div>
-    </div>
-    <nav class="bg-safety-neon-orange text-white hidden md:block transition-all duration-300 z-40">
-        <div class="container mx-auto px-4">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center">
-                    <a class="px-5 py-5 text-sm font-bold uppercase tracking-wide text-white hover:bg-white/20 transition-colors relative group" href="index.html">Home<span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span></a>
-                    <a class="px-5 py-5 text-sm font-bold uppercase tracking-wide text-white hover:bg-white/20 transition-colors relative group" href="about.html">About Us<span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span></a>
-                    <a class="px-5 py-5 text-sm font-bold uppercase tracking-wide text-white hover:bg-white/20 transition-colors relative group" href="products.html">Products<span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span></a>
-                    <a class="px-5 py-5 text-sm font-bold uppercase tracking-wide text-white hover:bg-white/20 transition-colors relative group" href="brands.html">Brands<span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span></a>
-                    <a class="px-5 py-5 text-sm font-bold uppercase tracking-wide text-white hover:bg-white/20 transition-colors relative group" href="contact.html">Contact<span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span></a>
-                </div>
-<a href="tel:919811048483"
-                    class="flex items-center gap-2 text-sm font-bold text-white hover:text-safety-hivis-yellow transition-colors py-5"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-phone h-4 w-4" aria-hidden="true">
-                        <path
-                            d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
-                        </path>
-                    </svg><span>Call: <!-- -->+91 9811048483</span></a>
+
+        <nav class="flex flex-col p-8 gap-6 overflow-y-auto">
+            <a href="index.html" class="text-2xl font-bold text-gray-800 hover:text-safety-neon-orange transition-all uppercase tracking-tight">HOME</a>
+            <a href="about.html" class="text-2xl font-bold text-safety-neon-orange transition-all uppercase tracking-tight">ABOUT US</a>
+            <a href="products.html" class="text-2xl font-bold text-gray-800 hover:text-safety-neon-orange transition-all uppercase tracking-tight">PRODUCTS</a>
+            <a href="brands.html" class="text-2xl font-bold text-gray-800 hover:text-safety-neon-orange transition-all uppercase tracking-tight">BRANDS</a>
+            <a href="contact.html" class="text-2xl font-bold text-gray-800 hover:text-safety-neon-orange transition-all uppercase tracking-tight">CONTACT</a>
+            
+            <div class="mt-4 pt-8 border-t border-gray-100">
+                <a href="contact.html" class="flex items-center justify-center w-full py-4 bg-safety-neon-orange text-white font-bold rounded-xl shadow-lg shadow-safety-neon-orange/20 uppercase tracking-wider">Get Quote</a>
             </div>
-        </div>
-    </nav>
+            
+            <div class="mt-4 space-y-4">
+                <a href="tel:919811048483" class="flex items-center gap-4 text-gray-700 font-bold text-lg">
+                    <div class="w-10 h-10 bg-safety-neon-orange/10 rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-safety-neon-orange"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    </div>
+                    +91 9811048483
+                </a>
+                <p class="text-gray-500 text-sm font-medium pl-14">Safety Experts - Delhi NCR</p>
+            </div>
+        </nav>
+    </div>
     <main class="flex-1">
-            <section class="bg-gradient-to-br from-safety-charcoal via-safety-charcoal/95 to-black text-white py-24 relative overflow-hidden">
+        <div class="flex flex-col">
+            <section class="bg-gradient-to-br from-safety-charcoal via-gray-900 to-black text-white py-24 relative overflow-hidden">
                 <div class="absolute inset-0 opacity-20">
-                    <div class="absolute inset-0 bg-[url('assets/image/WhatsApp%20Image%202026-04-24%20at%208.22.35%20PM.jpeg')] bg-cover bg-center"></div>
+                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.42 PM.jpeg" alt="Background" class="w-full h-full object-cover">
                 </div>
                 <div class="container mx-auto px-4 text-center relative z-10">
                     <h1 class="text-5xl md:text-6xl font-black mb-6 tracking-tight">ABOUT <span class="text-safety-neon-orange">SAFETY EXPERTS</span></h1>
@@ -247,28 +194,39 @@
                 </div>
             </section>
 
-            <section class="bg-gray-50 py-20">
+            <section class="bg-gray-50 py-24">
                 <div class="container mx-auto px-4">
                     <div class="max-w-4xl mx-auto text-center mb-16">
-                        <h2 class="text-4xl font-bold text-safety-charcoal mb-4">Founder's Message</h2>
+                        <h2 class="text-4xl font-black text-safety-charcoal mb-4 uppercase tracking-tighter">Founder's <span class="text-safety-neon-orange">Message</span></h2>
                         <div class="w-20 h-1.5 bg-safety-neon-orange mx-auto rounded-full"></div>
                     </div>
-                    <div class="flex flex-col md:flex-row items-center gap-12 bg-white p-10 rounded-3xl shadow-2xl border border-gray-100">
-                        <div class="md:w-1/3 flex flex-col items-center">
-                            <div class="w-48 h-48 rounded-full bg-gradient-to-br from-safety-neon-orange to-orange-600 p-1 mb-6">
-                                <div class="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-safety-neon-orange"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <div class="flex flex-col md:flex-row items-stretch bg-white rounded-[2rem] shadow-2xl border border-gray-100 max-w-5xl mx-auto overflow-hidden transition-all hover:shadow-safety-neon-orange/10">
+                        <!-- Profile Column -->
+                        <div class="w-full md:w-1/3 p-10 md:p-12 flex flex-col items-center justify-center text-center bg-safety-charcoal text-white relative overflow-hidden">
+                            <div class="absolute inset-0 opacity-10 bg-[url('assets/image/WhatsApp%20Image%202026-04-24%20at%208.22.35%20PM.jpeg')] bg-cover bg-center"></div>
+                            <div class="relative z-10">
+                                <div class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-safety-neon-orange p-1 mb-6 shadow-xl overflow-hidden bg-white mx-auto">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.35 PM.jpeg" alt="Mr. Rahul Sakuja" class="w-full h-full object-cover rounded-full">
                                 </div>
+                                <h3 class="text-2xl font-bold mb-1 leading-tight text-white">Mr. Rahul Sakuja</h3>
+                                <p class="text-safety-neon-orange font-bold text-xs uppercase tracking-widest">Founder, Safety Experts</p>
                             </div>
-                            <h3 class="text-2xl font-bold text-safety-charcoal">Mr. Rahul Sakuja</h3>
-                            <p class="text-safety-neon-orange font-semibold">Founder, Safety Experts</p>
                         </div>
-                        <div class="md:w-2/3 relative">
-                            <svg class="absolute -top-8 -left-8 text-gray-100 w-24 h-24 -z-10" fill="currentColor" viewBox="0 0 32 32"><path d="M10 8v8h6l-2.5 6h-4l2.5-6H6V8h4zm12 0v8h6l-2.5 6h-4l2.5-6h-6V8h4z"/></svg>
-                            <div class="space-y-4 text-gray-600 italic text-lg leading-relaxed">
-                                <p>“At Safety Experts, we believe that safety is not just a product — it is a responsibility towards every worker who steps onto a site every day.</p>
-                                <p>When we started this journey, our vision was clear — to provide reliable and high-quality safety solutions that industries can trust without compromise. Over the years, we have continuously worked towards understanding the real challenges faced in workplaces and delivering products that ensure protection, comfort, and performance.</p>
-                                <p>Our commitment is simple — to help businesses create safer environments, reduce risks, and protect their most valuable asset — their people.”</p>
+                        
+                        <!-- Message Column -->
+                        <div class="w-full md:w-2/3 p-10 md:p-16 relative flex flex-col justify-center bg-white">
+                            <div class="absolute top-10 left-10 text-gray-100 opacity-30 select-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V5C14.017 3.89543 14.9124 3 16.017 3H19.017C21.2261 3 23.017 4.79086 23.017 7V15C23.017 18.3137 20.3307 21 17.017 21H14.017ZM1 21L1 18C1 16.8954 1.89543 16 3 16H6C6.55228 16 7 15.5523 7 15V9C7 8.44772 6.55228 8 6 8H3C1.89543 8 1 7.10457 1 6V5C1 3.89543 1.89543 3 3 3H6C8.20914 3 10 4.79086 10 7V15C10 18.3137 7.31371 21 4 21H1Z"></path></svg>
+                            </div>
+                            <div class="relative z-10 space-y-8">
+                                <div class="text-safety-charcoal italic text-xl md:text-2xl leading-relaxed font-semibold border-l-4 border-safety-neon-orange pl-6">
+                                    &quot;At Safety Experts, we believe that safety is not just a product &mdash; it is a responsibility towards every worker who steps onto a site every day.&quot;
+                                </div>
+                                
+                                <div class="space-y-4 text-gray-600 text-lg leading-relaxed">
+                                    <p>When we started this journey, our vision was clear &mdash; to provide reliable and high-quality safety solutions that industries can trust without compromise. Over the years, we have continuously worked towards understanding the real challenges faced in workplaces and delivering products that ensure protection, comfort, and performance.</p>
+                                    <p>Our commitment is simple &mdash; to help businesses create safer environments, reduce risks, and protect their most valuable asset &mdash; their people.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -278,24 +236,24 @@
             <section class="py-20 bg-white">
                 <div class="container mx-auto px-4">
                     <div class="grid md:grid-cols-2 gap-12">
-                        <div class="bg-safety-charcoal p-12 rounded-3xl text-white shadow-2xl relative overflow-hidden group hover:-translate-y-2 transition-all duration-500">
-                            <div class="absolute top-0 right-0 w-32 h-32 bg-safety-neon-orange/20 rounded-bl-full"></div>
+                        <div class="bg-white p-12 rounded-3xl text-safety-charcoal border-2 border-gray-100 shadow-2xl relative overflow-hidden group hover:-translate-y-2 transition-all duration-500">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-safety-neon-orange/5 rounded-bl-full"></div>
                             <div class="relative z-10">
                                 <div class="w-16 h-16 bg-safety-neon-orange rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-safety-neon-orange/20">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="m3.34 19 1.4-1.4"/><path d="M7.8 7.8 6.4 6.4"/><path d="M11.66 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M16 2.1c.5 1.5.5 3 0 4.5"/><path d="M19 21a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14Z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
                                 </div>
                                 <h3 class="text-3xl font-bold mb-6 text-safety-neon-orange">Our Mission</h3>
-                                <p class="text-gray-300 leading-relaxed text-lg">“Our mission is to provide high-quality and reliable safety solutions, including Personal Protective Equipment (PPE) and traffic safety products, that ensure maximum protection for workers across industries. We are committed to delivering durable products, prompt service, and customized solutions that help our clients maintain safe, compliant, and efficient workplaces.”</p>
+                                <p class="text-gray-600 leading-relaxed text-lg">"Our mission is to provide high-quality and reliable safety solutions, including Personal Protective Equipment (PPE) and traffic safety products, that ensure maximum protection for workers across industries. We are committed to delivering durable products, prompt service, and customized solutions that help our clients maintain safe, compliant, and efficient workplaces."</p>
                             </div>
                         </div>
-                        <div class="bg-gradient-to-br from-safety-neon-orange to-orange-600 p-12 rounded-3xl text-white shadow-2xl relative overflow-hidden group hover:-translate-y-2 transition-all duration-500">
-                            <div class="absolute top-0 right-0 w-32 h-32 bg-white/20 rounded-bl-full"></div>
+                        <div class="bg-white p-12 rounded-3xl text-safety-charcoal border-2 border-gray-100 shadow-2xl relative overflow-hidden group hover:-translate-y-2 transition-all duration-500">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-safety-neon-orange/5 rounded-bl-full"></div>
                             <div class="relative z-10">
-                                <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-6 border border-white/30">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="1"/><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/></svg>
+                                <div class="w-16 h-16 bg-safety-neon-orange/10 rounded-2xl flex items-center justify-center mb-6 border border-safety-neon-orange/20">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-safety-neon-orange"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
                                 </div>
-                                <h3 class="text-3xl font-bold mb-6">Our Vision</h3>
-                                <p class="text-white/90 leading-relaxed text-lg">“Our vision is to become a leading and trusted name in the safety industry by continuously enhancing product quality, expanding our range of safety solutions, and setting benchmarks in customer satisfaction. We aim to contribute towards building a safer industrial environment where every worker returns home safely.”</p>
+                                <h3 class="text-3xl font-bold mb-6 text-safety-neon-orange">Our Vision</h3>
+                                <p class="text-gray-600 leading-relaxed text-lg">"Our vision is to become a leading and trusted name in the safety industry by continuously enhancing product quality, expanding our range of safety solutions, and setting benchmarks in customer satisfaction. We aim to contribute towards building a safer industrial environment where every worker returns home safely."</p>
                             </div>
                         </div>
                     </div>
@@ -531,7 +489,7 @@
         const searchInput = document.querySelector('input[type="search"]');
         const searchForm = document.querySelector('form');
         
-        if (searchForm) {
+        if (searchForm && searchInput) {
             searchForm.addEventListener('submit', (e) => {
                 e.preventDefault();
                 const query = searchInput.value.trim();
