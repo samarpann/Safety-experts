@@ -10,6 +10,7 @@
             #mobile-menu.flex { display: flex !important; }
         }
     </style>
+    <link rel="stylesheet" href="assets/css/theme-overrides.css">
     <meta charSet="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preload" href="_next/static/media/030c76ff40bce98c-s.p.c4196caa.woff2" as="font" crossorigin=""
@@ -78,6 +79,7 @@
     <script src="_next/static/chunks/a6dad97d9634a72d.js" noModule="">
 
     </script>
+    <link rel="stylesheet" href="assets/css/theme-overrides.css">
 </head>
 
 <body class="barlow_3c7cc451-module__rrEuMG__variable antialiased min-h-screen flex flex-col">
@@ -93,25 +95,26 @@
 
                 <!-- Desktop Search Bar -->
                 <div class="hidden md:flex flex-1 max-w-lg mx-6 lg:mx-12">
-                    <form action="products.html" method="GET" class="relative w-full flex">
+                    <form id="header-search-form" action="products.html" method="GET" class="relative w-full flex">
                         <div class="relative flex-1">
-                            <input type="search" name="search" placeholder="Search for safety products..." class="w-full h-12 bg-gray-50 border border-gray-200 rounded-l-xl py-3 px-5 pl-12 focus:outline-none focus:border-safety-neon-orange transition-all text-sm font-bold text-safety-charcoal">
+                            <input id="header-search-input" type="search" name="search" placeholder="Search for safety products..." class="w-full h-12 bg-gray-50 border border-gray-200 rounded-l-xl py-3 px-5 pl-12 focus:outline-none focus:border-safety-neon-orange transition-all text-sm font-bold text-safety-charcoal">
                             <div class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
                             </div>
                         </div>
-                        <button type="submit" class="h-12 bg-safety-neon-orange text-white text-xs font-bold px-6 rounded-r-xl hover:bg-safety-charcoal transition-colors shadow-lg shadow-safety-neon-orange/20">SEARCH</button>
+                        <button type="submit" class="h-12 bg-black text-yellow-500 text-xs font-bold px-6 rounded-r-xl hover:bg-yellow-500 hover:text-black transition-colors shadow-lg border border-yellow-500/30">SEARCH</button>
                     </form>
                 </div>
                 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center gap-6 lg:gap-8">
-                    <a href="index.html" class="text-sm font-bold text-safety-neon-orange transition-colors uppercase tracking-wider">Home</a>
+                    <a href="index.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">Home</a>
                     <a href="about.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">About</a>
                     <a href="products.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">Products</a>
+                    <a href="applications.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">Applications</a>
                     <a href="brands.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">Brands</a>
                     <a href="contact.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">Contact</a>
-                    <a href="contact.html" class="px-6 py-2.5 bg-safety-neon-orange text-white text-sm font-bold rounded-lg hover:bg-safety-charcoal transition-all shadow-lg shadow-safety-neon-orange/20 uppercase tracking-wider">Get Quote</a>
+                    <a href="contact.html" class="px-6 py-2.5 bg-black text-yellow-500 text-sm font-bold rounded-lg hover:bg-yellow-500 hover:text-black transition-all shadow-lg border border-yellow-500/30 uppercase tracking-wider">Get Quote</a>
                 </div>
                 
                 <!-- Mobile Menu Button -->
@@ -148,7 +151,7 @@
             <a href="contact.html" class="text-2xl font-bold text-gray-800 hover:text-safety-neon-orange transition-all uppercase tracking-tight">CONTACT</a>
             
             <div class="mt-4 pt-8 border-t border-gray-100">
-                <a href="contact.html" class="flex items-center justify-center w-full py-4 bg-safety-neon-orange text-white font-bold rounded-xl shadow-lg shadow-safety-neon-orange/20 uppercase tracking-wider">Get Quote</a>
+                <a href="contact.html" class="flex items-center justify-center w-full py-4 bg-black text-yellow-500 font-bold rounded-xl shadow-lg border border-yellow-500/30 uppercase tracking-wider hover:bg-yellow-500 hover:text-black transition-all">Get Quote</a>
             </div>
             
             <div class="mt-4 space-y-4">
@@ -174,7 +177,7 @@
                                 <img alt="Premium PPE Equipment" decoding="async" data-nimg="fill"
                                     class="object-cover"
                                     style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                    src="assets/image/WhatsApp Image 2026-04-24 at 8.22.53 PM.jpeg" />
+                                    src="assets/image/hero_1_yellow.png" />
                                 <div
                                     class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent flex">
                                 </div>
@@ -185,7 +188,7 @@
                                     <h2 class="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-tight mb-4 drop-shadow-md">
                                         Personal Protective Equipment</h2>
                                     <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-lg drop-shadow">Reliable and high-quality safety solutions that industries trust without compromise.</p>
-                                    <a class="inline-flex items-center gap-2 bg-safety-neon-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-bold transition-all shadow-lg hover:shadow-safety-neon-orange/30"
+                                    <a class="inline-flex items-center gap-2 bg-black hover:bg-yellow-500 text-yellow-500 hover:text-black border border-yellow-500 px-8 py-4 rounded-lg text-lg font-bold transition-all shadow-lg"
                                         href="products.html">
                                         Explore Products
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -206,7 +209,7 @@
                                 <img alt="Hand Protection Gear" decoding="async" data-nimg="fill"
                                     class="object-cover"
                                     style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                    src="assets/image/WhatsApp Image 2026-04-24 at 8.22.41 PM.jpeg" />
+                                    src="assets/image/hero_2_yellow.png" />
                                 <div
                                     class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent flex">
                                 </div>
@@ -217,7 +220,7 @@
                                     <h2 class="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-tight mb-4 drop-shadow-md">
                                         Industrial Hand Protection</h2>
                                     <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-lg drop-shadow">From chainmail to nitrile, find the perfect grip and protection for every task.</p>
-                                    <a class="inline-flex items-center gap-2 bg-safety-neon-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-bold transition-all shadow-lg hover:shadow-safety-neon-orange/30"
+                                    <a class="inline-flex items-center gap-2 bg-black hover:bg-yellow-500 text-yellow-500 hover:text-black border border-yellow-500 px-8 py-4 rounded-lg text-lg font-bold transition-all shadow-lg"
                                         href="products.html">
                                         View All Gloves
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -238,7 +241,7 @@
                                 <img alt="Road Safety Solutions" decoding="async" data-nimg="fill"
                                     class="object-cover"
                                     style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                    src="assets/image/WhatsApp Image 2026-04-24 at 8.22.53 PM (1).jpeg" />
+                                    src="assets/image/hero_3_yellow.png" />
                                 <div
                                     class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent flex">
                                 </div>
@@ -249,7 +252,7 @@
                                     <h2 class="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-tight mb-4 drop-shadow-md">
                                         Road & Traffic Solutions</h2>
                                     <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-lg drop-shadow">Cable protectors, traffic cones, and high-visibility road safety equipment.</p>
-                                    <a class="inline-flex items-center gap-2 bg-safety-neon-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-bold transition-all shadow-lg hover:shadow-safety-neon-orange/30"
+                                    <a class="inline-flex items-center gap-2 bg-black hover:bg-yellow-500 text-yellow-500 hover:text-black border border-yellow-500 px-8 py-4 rounded-lg text-lg font-bold transition-all shadow-lg"
                                         href="products.html">
                                         Explore Road Safety
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -270,7 +273,7 @@
                                 <img alt="Emergency First Aid" decoding="async" data-nimg="fill"
                                     class="object-cover"
                                     style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                    src="assets/image/WhatsApp Image 2026-04-24 at 8.22.52 PM (2).jpeg" />
+                                    src="assets/image/hero_4_yellow.png" />
                                 <div
                                     class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent flex">
                                 </div>
@@ -281,7 +284,7 @@
                                     <h2 class="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-tight mb-4 drop-shadow-md">
                                         Emergency & Medical Supplies</h2>
                                     <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-lg drop-shadow">Foldable stretchers, medical gloves, and first aid kits for every workplace.</p>
-                                    <a class="inline-flex items-center gap-2 bg-safety-neon-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-bold transition-all shadow-lg hover:shadow-safety-neon-orange/30"
+                                    <a class="inline-flex items-center gap-2 bg-black hover:bg-yellow-500 text-yellow-500 hover:text-black border border-yellow-500 px-8 py-4 rounded-lg text-lg font-bold transition-all shadow-lg"
                                         href="products.html">
                                         View Medical Range
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -302,7 +305,7 @@
                                 <img alt="Industrial Safety Stations" decoding="async" data-nimg="fill"
                                     class="object-cover"
                                     style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                    src="assets/image/WhatsApp Image 2026-04-24 at 8.22.54 PM.jpeg" />
+                                    src="assets/image/hero_5_yellow.png" />
                                 <div
                                     class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent flex">
                                 </div>
@@ -313,7 +316,7 @@
                                     <h2 class="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-tight mb-4 drop-shadow-md">
                                         Industrial Safety Stations</h2>
                                     <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-lg drop-shadow">Emergency eyewash stations and safety systems for high-hazard environments.</p>
-                                    <a class="inline-flex items-center gap-2 bg-safety-neon-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-bold transition-all shadow-lg hover:shadow-safety-neon-orange/30"
+                                    <a class="inline-flex items-center gap-2 bg-black hover:bg-yellow-500 text-yellow-500 hover:text-black border border-yellow-500 px-8 py-4 rounded-lg text-lg font-bold transition-all shadow-lg"
                                         href="products.html">
                                         View Safety Gear
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -435,7 +438,7 @@
                                 <div class="absolute top-3 left-3 bg-safety-neon-orange text-white text-xs font-bold px-2 py-1 rounded z-10">In Stock</div>
                             </div>
                             <div class="p-5 flex flex-col flex-1">
-                                <p class="text-xs text-safety-neon-orange font-bold mb-1 uppercase tracking-wider">Road Safety</p>
+                                <p class="text-xs text-safety-neon-orange font-bold mb-1 uppercase tracking-wider">Traffic Protection</p>
                                 <h3 class="text-safety-charcoal font-bold mb-4 group-hover:text-safety-neon-orange transition-colors line-clamp-2">Reflective Road Safety Cones</h3>
                                 <div class="mt-auto flex items-center justify-between">
                                     <span class="text-gray-400 text-xs font-medium">Bulk Pricing Available</span>
@@ -588,7 +591,7 @@
                     <form class="flex w-full max-w-md"><input type="email" placeholder="Your email address" required=""
                             class="flex-1 h-12 px-5 bg-white/10 border border-white/20 rounded-l-sm text-sm text-white placeholder-gray-500 focus:outline-none newsletter-input transition-all"
                             value="" /><button type="submit"
-                            class="h-12 px-6 bg-safety-neon-orange hover:bg-safety-neon-orange/90 text-white font-bold text-sm uppercase tracking-wider rounded-r-sm transition-colors flex items-center gap-2">Subscribe<svg
+                            class="h-12 px-6 bg-black hover:bg-yellow-500 text-yellow-500 hover:text-black font-bold text-sm uppercase tracking-wider rounded-r-sm transition-colors flex items-center gap-2 border border-yellow-500/30">Subscribe<svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-send h-4 w-4" aria-hidden="true">
@@ -763,8 +766,8 @@
     <script>self.__next_f.push([1, "b:[\"$\",\"div\",null,{\"className\":\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6\",\"children\":[[\"$\",\"$L9\",null,{\"href\":\"/category/ppe/head-protection/proguard-safety-helmet-type-1\",\"className\":\"group bg-[#111] rounded-xl border border-gray-800 hover:border-primary/50 transition-all duration-300 overflow-hidden flex flex-col h-full\",\"children\":[[\"$\",\"div\",null,{\"className\":\"relative aspect-[4/5] overflow-hidden bg-white/5\",\"children\":[[\"$\",\"div\",null,{\"className\":\"absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded z-10\",\"children\":\"-20%\"}],[\"$\",\"div\",null,{\"className\":\"absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110\",\"style\":{\"backgroundImage\":\"url('https://lh3.googleusercontent.com/aida-public/AB6AXuD5IwWxFoxD6L9iSDgu7ITA5WSI1mGMzammoYXBZA-3lVBO8E8VyL_L0pcOD8bsG3TyYCrEfB0mNsKOniFxqlSEQ1kWdW_PVIyVdEusGDLr0qqxkPYDjMRxT3b8WlKKlslDwpGhYF-X1pmBjkFPgn7Yu0qyKM1I4X4ubRuLjuML6p78yCchsTJ-osKSZdxJ7U5R71DIaRzmC099tzMwin2wGhiCZh5ZWpsP-0V-b_87kJVdpVkylAhAiRwlxRAm5ZshdipD79wG2P4T')\"}}],[\"$\",\"button\",null,{\"className\":\"absolute bottom-4 right-4 bg-primary text-black p-2 rounded-full shadow-lg opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-10\",\"children\":[\"$\",\"span\",null,{\"className\":\"material-symbols-outlined\",\"children\":\"add_shopping_cart\"}]}]]}],[\"$\",\"div\",null,{\"className\":\"p-5 flex flex-col flex-1\",\"children\":[[\"$\",\"p\",null,{\"className\":\"text-xs text-gray-500 mb-1\",\"children\":\"Head Protection\"}],[\"$\",\"h3\",null,{\"className\":\"text-white font-medium mb-2 group-hover:text-primary transition-colors line-clamp-2\",\"children\":\"Ultra-Guard Hard Hat Pro Series\"}],[\"$\",\"div\",null,{\"className\":\"mt-auto flex items-end gap-2\",\"children\":[[\"$\",\"span\",null,{\"className\":\"text-primary font-bold text-lg\",\"children\":\"$$24.99\"}],[\"$\",\"span\",null,{\"className\":\"text-gray-500 text-sm line-through decoration-red-500\",\"children\":\"$$31.99\"}]]}]]}]]}],[\"$\",\"$L9\",null,{\"href\":\"/category/ppe/head-protection/proguard-safety-helmet-type-1\",\"className\":\"group bg-[#111] rounded-xl border border-gray-800 hover:border-primary/50 transition-all duration-300 overflow-hidden flex flex-col h-full\",\"children\":[[\"$\",\"div\",null,{\"className\":\"relative aspect-[4/5] overflow-hidden bg-white/5\",\"children\":[[\"$\",\"div\",null,{\"className\":\"absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110\",\"style\":{\"backgroundImage\":\"url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCgWooSAhgjkzHAD3nglqfZaGlQL6fF2YrOxaVYWnXQxsvaOdLlS_W3c2shMJHQ55TBgaBY36FNdt2yLT0n0alBdudqgPEgnGJlyBwcU3KTNMHUp3mwlhf1DfX1rG-XNVBZGa8NlNUJfDf3tZNet1o0DGRXaYd6vRDw3WKbqixlsZReW8Ax8r5EypOHlCzyrpQEJmY43d7Qk1whebmRjeVhRVp9SbyB6bHuthSikTfevgBtYCdg1Rmmo8j9qvdUljD9hYJMppEuWh7')\"}}],[\"$\",\"button\",null,{\"className\":\"absolute bottom-4 right-4 bg-primary text-black p-2 rounded-full shadow-lg opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-10\",\"children\":[\"$\",\"span\",null,{\"className\":\"material-symbols-outlined\",\"children\":\"add_shopping_cart\"}]}]]}],[\"$\",\"div\",null,{\"className\":\"p-5 flex flex-col flex-1\",\"children\":[[\"$\",\"p\",null,{\"className\":\"text-xs text-gray-500 mb-1\",\"children\":\"Eye Protection\"}],[\"$\",\"h3\",null,{\"className\":\"text-white font-medium mb-2 group-hover:text-primary transition-colors line-clamp-2\",\"children\":\"VisionPro Anti-Fog Safety Glasses\"}],[\"$\",\"div\",null,{\"className\":\"mt-auto flex items-end gap-2\",\"children\":[\"$\",\"span\",null,{\"className\":\"text-primary font-bold text-lg\",\"children\":\"$$12.50\"}]}]]}]]}],[\"$\",\"$L9\",null,{\"href\":\"/category/ppe/head-protection/proguard-safety-helmet-type-1\",\"className\":\"group bg-[#111] rounded-xl border border-gray-800 hover:border-primary/50 transition-all duration-300 overflow-hidden flex flex-col h-full\",\"children\":[\"$L12\",\"$L13\"]}],\"$L14\"]}]\n"])</script>
     <script>self.__next_f.push([1, "c:[\"$\",\"section\",null,{\"className\":\"mb-20\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-center mb-12\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"text-3xl font-bold text-foreground mb-4\",\"children\":\"Industries We Serve\"}],[\"$\",\"p\",null,{\"className\":\"text-muted-foreground max-w-2xl mx-auto\",\"children\":\"Providing specialized equipment tailored to the unique safety challenges of major industrial sectors.\"}]]}],[\"$\",\"div\",null,{\"className\":\"grid grid-cols-1 md:grid-cols-3 gap-6\",\"children\":[[\"$\",\"$L9\",null,{\"className\":\"group relative overflow-hidden rounded-xl aspect-video bg-[#111] border border-gray-800 hover:border-primary transition-colors\",\"href\":\"/industries\",\"children\":[[\"$\",\"div\",null,{\"className\":\"absolute inset-0 bg-cover bg-center opacity-40 group-hover:opacity-20 transition-opacity\",\"style\":{\"backgroundImage\":\"url('https://lh3.googleusercontent.com/aida-public/AB6AXuB1z6vZHHKot_Pwwg8Ui2jIoOZN1ho1fO14wGH-pNucY9WdK18abNkrjfJDsCOdk_7Gtun0WJH4FdnvCFArsjBPudUcKqvZmA4L1LnBPlk_h-yjKOBf6oES8kx7ic3C7iPvCQIlHLpbcX-OiND63LYETJIhuDRRknJU2o1hGc9mji0BlvJhopf3W7sd9gPScZGyS8o8gGbJAOgxdQomlTMdFtijzIXdJikZyr4QfkVPpFh1-yVefbLSL63N1BjKjjSh7Xp-R7nXH0kf')\"}}],[\"$\",\"div\",null,{\"className\":\"relative z-10 flex flex-col items-center justify-center h-full p-6 text-center\",\"children\":[[\"$\",\"div\",null,{\"className\":\"w-16 h-16 rounded-full bg-black/80 border border-gray-800 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:border-primary transition-all\",\"children\":[\"$\",\"span\",null,{\"className\":\"material-symbols-outlined text-3xl text-primary\",\"children\":\"construction\"}]}],[\"$\",\"h3\",null,{\"className\":\"text-xl font-bold text-white mb-2\",\"children\":\"Construction\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-gray-400 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300\",\"children\":\"Site safety, fall protection \u0026 heavy machinery gear.\"}]]}]]}],[\"$\",\"$L9\",null,{\"className\":\"group relative overflow-hidden rounded-xl aspect-video bg-[#111] border border-gray-800 hover:border-primary transition-colors\",\"href\":\"/industries\",\"children\":[[\"$\",\"div\",null,{\"className\":\"absolute inset-0 bg-cover bg-center opacity-40 group-hover:opacity-20 transition-opacity\",\"style\":{\"backgroundImage\":\"url('https://lh3.googleusercontent.com/aida-public/AB6AXuDpb_Aj3ch3m6a2Vw5068g6KNVejp_x_1XdkxMKifhL3detY6fbpgq0BL7MRIOU9HykkYhOUnS7JuQDYX0AGoLG2V9hERIpX3zskguL-fsqe4evqVrWw6VHf1GYr29Vly61S3wvXbm5fcHSjrlAx3RyuJBlt8YSX59jgQWqPGcxtCnr39NSnLacv_IlkgZF91f2M_I6gKFKSRQbJ2kp5eARtVwxBDQc0hLRDE4zIQnLy_w_BjUebwTAMsBTWTtUmkKZhrYdOJuhAYZ6')\"}}],[\"$\",\"div\",null,{\"className\":\"relative z-10 flex flex-col items-center justify-center h-full p-6 text-center\",\"children\":[[\"$\",\"div\",null,{\"className\":\"w-16 h-16 rounded-full bg-black/80 border border-gray-800 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:border-primary transition-all\",\"children\":[\"$\",\"span\",null,{\"className\":\"material-symbols-outlined text-3xl text-primary\",\"children\":\"precision_manufacturing\"}]}],[\"$\",\"h3\",null,{\"className\":\"text-xl font-bold text-white mb-2\",\"children\":\"Manufacturing\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-gray-400 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300\",\"children\":\"Assembly line PPE, hearing \u0026 respiratory protection.\"}]]}]]}],[\"$\",\"$L9\",null,{\"className\":\"group relative overflow-hidden rounded-xl aspect-video bg-[#111] border border-gray-800 hover:border-primary transition-colors\",\"href\":\"/industries\",\"children\":[[\"$\",\"div\",null,{\"className\":\"absolute inset-0 bg-cover bg-center opacity-40 group-hover:opacity-20 transition-opacity\",\"style\":{\"backgroundImage\":\"url('https://lh3.googleusercontent.com/aida-public/AB6AXuAyPE-Y3ndkJ4T3S9YJWEsP57TnjOfbm4jltmehMKLfhmipBTsTfwjttyx3ZNw7dukOTWByODsZORVIEkliqw75X6gVJR7RLBkR4djOFyGPtnFzqkG00gVG-25-gp4Fx3u4AO6TCBoxASXuvCoPI-rNlE4w1O4L4bFoSMD7ck_Q7PKCYhJe7tsF3ovn9jxaYk7pLDnof6GXwbIGrd1sMBPDYrbbGRi7YzVCVx3F_6lXHUGAkDReX1ukmBXGuWdY-EbfKKQJsffv03PM')\"}}],\"$L15\"]}]]}]]}]\n"])</script>
     <script>self.__next_f.push([1, "d:[\"$\",\"$L16\",null,{}]\ne:[\"$\",\"script\",\"script-0\",{\"src\":\"/_next/static/chunks/8661a2afd0ad373a.js\",\"async\":true,\"nonce\":\"$undefined\"}]\nf:[\"$\",\"$L17\",null,{\"children\":[\"$\",\"$18\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@19\"}]}]\n10:[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$L1a\",null,{\"children\":\"$L1b\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$L1c\",null,{\"children\":[\"$\",\"$18\",null,{\"name\":\"Next.Metadata\",\"children\":\"$L1d\"}]}]}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}]\n"])</script>
-    <script>self.__next_f.push([1, "1:\"$Sreact.fragment\"\n2:I[43412,[\"/_next/static/chunks/4719edd8b09bc685.js\",\"/_next/static/chunks/74adf8f24dd99e0e.js\",\"/_next/static/chunks/36a2b8f59697a4e9.js\"],\"AuthProvider\"]\n3:I[93963,[\"/_next/static/chunks/4719edd8b09bc685.js\",\"/_next/static/chunks/74adf8f24dd99e0e.js\",\"/_next/static/chunks/36a2b8f59697a4e9.js\"],\"Header\"]\n4:I[39756,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/d2be314c3ece3fbe.js\"],\"default\"]\n5:I[37457,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/d2be314c3ece3fbe.js\"],\"default\"]\n6:I[54231,[\"/_next/static/chunks/4719edd8b09bc685.js\",\"/_next/static/chunks/74adf8f24dd99e0e.js\",\"/_next/static/chunks/36a2b8f59697a4e9.js\"],\"Footer\"]\n7:I[87186,[\"/_next/static/chunks/4719edd8b09bc685.js\",\"/_next/static/chunks/74adf8f24dd99e0e.js\",\"/_next/static/chunks/36a2b8f59697a4e9.js\"],\"QuoteModal\"]\n8:I[94655,[\"/_next/static/chunks/4719edd8b09bc685.js\",\"/_next/static/chunks/74adf8f24dd99e0e.js\",\"/_next/static/chunks/36a2b8f59697a4e9.js\",\"/_next/static/chunks/8661a2afd0ad373a.js\"],\"HeroSlider\"]\n9:I[22016,[\"/_next/static/chunks/4719edd8b09bc685.js\",\"/_next/static/chunks/74adf8f24dd99e0e.js\",\"/_next/static/chunks/36a2b8f59697a4e9.js\",\"/_next/static/chunks/8661a2afd0ad373a.js\"],\"\"]\n11:I[68027,[],\"default\"]\n:HL[\"/_next/static/chunks/eedc98f5e1db5151.css\",\"style\"]\n:HL[\"/_next/static/media/030c76ff40bce98c-s.p.c4196caa.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/efe66f9dab7e6ce7-s.p.a25a39ba.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n")</script>
-    <script>self.__next_f.push([1, "12:[\"$\",\"div\",null,{\"className\":\"relative aspect-[4/5] overflow-hidden bg-white/5\",\"children\":[[\"$\",\"div\",null,{\"className\":\"absolute top-3 left-3 bg-primary text-black text-xs font-bold px-2 py-1 rounded z-10\",\"children\":\"Best Seller\"}],[\"$\",\"div\",null,{\"className\":\"absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110\",\"style\":{\"backgroundImage\":\"url('https://lh3.googleusercontent.com/aida-public/AB6AXuB5np85BL7NbPpsI80Ye4EizDunz0--nuS_q2EUgcKnU8Di-uvBdB_pYDq57a5BLY63jkVLKeXBkT0xVmvQzC9W1PogjKANsF_cRgsSms0UzvG5KM7I0zOKujCJX9qTRBpfDEnygb1P5RK0tGyeyDV0IuCbcJcf3ClOVGhkMeFaLiNzQriT5gTdTLc22rLxXs0Vj3yDPqvT-BE9rngJ1bF4xvX9teYhsQl_ZoUU6YiJP1LkGhPaMtjmvC_kUhOAPH-mvoIxukexiVHL')\"}}]]}]\n13:[\"$\",\"div\",null,{\"className\":\"p-5 flex flex-col flex-1\",\"children\":[[\"$\",\"p\",null,{\"className\":\"text-xs text-gray-500 mb-1\",\"children\":\"Apparel\"}],[\"$\",\"h3\",null,{\"className\":\"text-white font-medium mb-2 group-hover:text-primary transition-colors line-clamp-2\",\"children\":\"Reflective High-Vis Vest L/XL\"}],[\"$\",\"div\",null,{\"className\":\"mt-auto flex items-end gap-2\",\"children\":[\"$\",\"span\",null,{\"className\":\"text-primary font-bold text-lg\",\"children\":\"$$19.99\"}]}]]}]\n"])</script>
+    <script>self.__next_f.push([1, "1:\"$Sreact.fragment\"\n2:I[43412,[\"/_next/static/chunks/4719edd8b09bc685.js\",\"/_next/static/chunks/74adf8f24dd99e0e.js\",\"/_next/static/chunks/36a2b8f59697a4e9.js\"],\"AuthProvider\"]\n3:I[93963,[\"/_next/static/chunks/4719edd8b09bc685.js\",\"/_next/static/chunks/74adf8f24dd99e0e.js\",\"/_next/static/chunks/36a2b8f59697a4e9.js\"],\"Header\"]\n4:I[39756,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/d2be314c3ece3fbe.js\"],\"default\"]\n5:I[37457,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/d2be314c3ece3fbe.js\"],\"default\"]\n6:I[54231,[\"/_next/static/chunks/4719edd8b09bc685.js\",\"/_next/static/chunks/74adf8f24dd99e0e.js\",\"/_next/static/chunks/36a2b8f59697a4e9.js\"],\"Footer\"]\n7:I[87186,[\"/_next/static/chunks/4719edd8b09bc685.js\",\"/_next/static/chunks/74adf8f24dd99e0e.js\",\"/_next/static/chunks/36a2b8f59697a4e9.js\"],\"QuoteModal\"]\n8:I[94655,[\"/_next/static/chunks/4719edd8b09bc685.js\",\"/_next/static/chunks/74adf8f24dd99e0e.js\",\"/_next/static/chunks/36a2b8f59697a4e9.js\",\"/_next/static/chunks/8661a2afd0ad373a.js\"],\"HeroSlider\"]\n9:I[22016,[\"/_next/static/chunks/4719edd8b09bc685.js\",\"/_next/static/chunks/74adf8f24dd99e0e.js\",\"/_next/static/chunks/36a2b8f59697a4e9.js\",\"/_next/static/chunks/8661a2afd0ad373a.js\"],\"\"]\n11:I[68027,[],\"default\"]\n:HL[\"/_next/static/chunks/eedc98f5e1db5151.css\",\"style\"]\n:HL[\"/_next/static/media/030c76ff40bce98c-s.p.c4196caa.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/efe66f9dab7e6ce7-s.p.a25a39ba.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n"])</script>
+    <script>self.__next_f.push([1, "12:[\"$\",\"div\",null,{\"className\":\"relative aspect-[4/5] overflow-hidden bg-white/5\",\"children\":[[\"$\",\"div\",null,{\"className\":\"absolute top-3 left-3 bg-primary text-black text-xs font-bold px-2 py-1 rounded z-10\",\"children\":\"Best Seller\"}],[\"$\",\"div\",null,{\"className\":\"absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110\",\"style\":{\"backgroundImage\":\"url('https://lh3.googleusercontent.com/aida-public/AB6AXuB5np85BL7NbPpsI80Ye4EizDunz0--nuS_q2EUgcKnU8Di-uvBdB_pYDq57a5BLY63jkVLKeXBkT0xVmvQzC9W1PogjKANsF_cRgsSms0UzvG5KM7I0zOKujCJX9qTRBpfDEnygb1P5RK0tGyeyDV0IuCbcJcf3ClOVGhkMeFaLiNzQriT5gTdTLc22rLxXs0Vj3yDPqvT-BE9rngJ1bF4xvX9teYhsQl_ZoUU6YiJP1LkGhPaMtjmvC_kUhOAPH-mvoIxukexiVHL')\"}}]]}]]\n13:[\"$\",\"div\",null,{\"className\":\"p-5 flex flex-col flex-1\",\"children\":[[\"$\",\"p\",null,{\"className\":\"text-xs text-gray-500 mb-1\",\"children\":\"Apparel\"}],[\"$\",\"h3\",null,{\"className\":\"text-white font-medium mb-2 group-hover:text-primary transition-colors line-clamp-2\",\"children\":\"Reflective High-Vis Vest L/XL\"}],[\"$\",\"div\",null,{\"className\":\"mt-auto flex items-end gap-2\",\"children\":[\"$\",\"span\",null,{\"className\":\"text-primary font-bold text-lg\",\"children\":\"$$19.99\"}]}]]}]\n"])</script>
     <script>self.__next_f.push([1, "14:[\"$\",\"$L9\",null,{\"href\":\"/category/ppe/head-protection/proguard-safety-helmet-type-1\",\"className\":\"group bg-[#111] rounded-xl border border-gray-800 hover:border-primary/50 transition-all duration-300 overflow-hidden flex flex-col h-full\",\"children\":[[\"$\",\"div\",null,{\"className\":\"relative aspect-[4/5] overflow-hidden bg-white/5\",\"children\":[[\"$\",\"div\",null,{\"className\":\"absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110\",\"style\":{\"backgroundImage\":\"url('https://lh3.googleusercontent.com/aida-public/AB6AXuDzZR1HomkeoIUQ6SDVWnZz5qkOt_YoNLBQh2qeNNWm3rp6tSYWruFFZSLizS9w_d4iWrNB5O8UyfG0s6K9YwsQMNfEwN3xBiMBLrGFTZ8yJ1_-aUW3yxtnEwDaRG-wU_pZc20bUFK0Xwfexktc14HM2YZIa7RfHNWEkAKDjWxItvTh1dmd_xD_vU3wgbvWu7_LVD072ZXqH3KwW6UpYXdq3IM9hob8O59zyt4T85rnrHxu4U5RAIhkuwwrU3a3KNzRQi--xs_k7UrY')\"}}]]}],[\"$\",\"div\",null,{\"className\":\"p-5 flex flex-col flex-1\",\"children\":[[\"$\",\"p\",null,{\"className\":\"text-xs text-gray-500 mb-1\",\"children\":\"Footwear\"}],[\"$\",\"h3\",null,{\"className\":\"text-white font-medium mb-2 group-hover:text-primary transition-colors line-clamp-2\",\"children\":\"Titan Heavy Duty Work Boots\"}],[\"$\",\"div\",null,{\"className\":\"mt-auto flex items-end gap-2\",\"children\":[[\"$\",\"span\",null,{\"className\":\"text-primary font-bold text-lg\",\"children\":\"$$89.99\"}],[\"$\",\"span\",null,{\"className\":\"text-gray-500 text-sm line-through decoration-red-500\",\"children\":\"$$110.00\"}]]}]]}]]}]\n"])</script>
     <script>self.__next_f.push([1, "15:[\"$\",\"div\",null,{\"className\":\"relative z-10 flex flex-col items-center justify-center h-full p-6 text-center\",\"children\":[[\"$\",\"div\",null,{\"className\":\"w-16 h-16 rounded-full bg-black/80 border border-gray-800 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:border-primary transition-all\",\"children\":[\"$\",\"span\",null,{\"className\":\"material-symbols-outlined text-3xl text-primary\",\"children\":\"engineering\"}]}],[\"$\",\"h3\",null,{\"className\":\"text-xl font-bold text-white mb-2\",\"children\":\"Mining \u0026 Energy\"}],[\"$\",\"p\",null,{\"className\":\"text-sm text-gray-400 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300\",\"children\":\"Explosion proof gear, lights \u0026 high-vis apparel.\"}]]}]\n"])</script>
     <script>self.__next_f.push([1, "1b:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])</script>
@@ -852,10 +855,33 @@
             }
         });
 
-        if (typeof searchForm !== 'undefined' && searchForm && typeof searchInput !== 'undefined' && searchInput) {
-            searchForm.addEventListener('submit', (e) => {
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (menuBtn && closeBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            });
+
+            closeBtn.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                document.body.style.overflow = 'auto';
+            });
+        }
+
+        // Header search functionality
+        const headerSearchForm = document.getElementById('header-search-form');
+        const headerSearchInput = document.getElementById('header-search-input');
+        
+        if (headerSearchForm && headerSearchInput) {
+            headerSearchForm.addEventListener('submit', (e) => {
                 e.preventDefault();
-                const query = searchInput.value.trim();
+                const query = headerSearchInput.value.trim();
                 if (query) {
                     window.location.href = `products.html?search=${encodeURIComponent(query)}`;
                 } else {
@@ -863,26 +889,12 @@
                 }
             });
         }
-
-        // Placeholder for category dropdown interaction
-        categoryBtn.addEventListener('click', () => {
-            window.location.href = 'products.html';
-        });
-        // Mobile menu toggle
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const closeBtn = document.getElementById('close-menu');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.remove('hidden');
-            mobileMenu.classList.add('flex');
-            document.body.style.overflow = 'hidden';
-        });
-
-        closeBtn.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-            mobileMenu.classList.remove('flex');
-            document.body.style.overflow = 'auto';
-        });
     </script>
+    <a href="https://wa.me/919811048483" class="whatsapp-float" target="_blank">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+        </svg>
+    </a>
+
+    <script src="assets/js/whatsapp-query.js"></script>
 </body>

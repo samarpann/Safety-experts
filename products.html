@@ -9,6 +9,18 @@
             #mobile-menu.hidden { display: none !important; }
             #mobile-menu.flex { display: flex !important; }
         }
+        :root {
+            --safety-yellow: #fbbf24;
+            --safety-yellow-dark: #d97706;
+            --safety-black: #000000;
+        }
+        .bg-safety-neon-orange { background-color: var(--safety-yellow) !important; color: black !important; }
+        .text-safety-neon-orange { color: var(--safety-yellow) !important; }
+        .border-safety-neon-orange { border-color: var(--safety-yellow) !important; }
+        .hover\:bg-safety-neon-orange:hover { background-color: var(--safety-black) !important; color: var(--safety-yellow) !important; }
+        .hover\:text-safety-neon-orange:hover { color: var(--safety-yellow) !important; }
+        .shadow-safety-neon-orange\/20 { box-shadow: 0 10px 15px -3px rgba(251, 191, 36, 0.2) !important; }
+        .bg-safety-charcoal { background-color: var(--safety-black) !important; }
     </style>
     <meta charSet="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -65,6 +77,7 @@
         content="Supplier &amp; authorised dealer of PPE kits, safety helmets, industrial gloves, fire safety equipment &amp; fall protection systems in Delhi NCR." />
     <link rel="icon" href="favicon28a7.ico?favicon.0b3bf435.ico" sizes="256x256" type="image/x-icon" />
     <script src="_next/static/chunks/a6dad97d9634a72d.js" noModule=""></script>
+    <link rel="stylesheet" href="assets/css/theme-overrides.css">
     <style>
         .custom-scrollbar::-webkit-scrollbar {
             width: 5px;
@@ -99,7 +112,7 @@
                         <div class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
                         </div>
-                        <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 bg-safety-neon-orange text-white text-xs font-bold px-4 py-1.5 rounded-lg hover:bg-safety-charcoal transition-colors">SEARCH</button>
+                        <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black text-yellow-500 text-xs font-bold px-4 py-1.5 rounded-lg hover:bg-yellow-500 hover:text-black border border-yellow-500/30 transition-colors">SEARCH</button>
                     </form>
                 </div>
                 
@@ -108,9 +121,10 @@
                     <a href="index.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">Home</a>
                     <a href="about.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">About</a>
                     <a href="products.html" class="text-sm font-bold text-safety-neon-orange transition-colors uppercase tracking-wider">Products</a>
+                    <a href="applications.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">Applications</a>
                     <a href="brands.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">Brands</a>
                     <a href="contact.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">Contact</a>
-                    <a href="contact.html" class="px-6 py-2.5 bg-safety-neon-orange text-white text-sm font-bold rounded-lg hover:bg-safety-charcoal transition-all shadow-lg shadow-safety-neon-orange/20 uppercase tracking-wider">Get Quote</a>
+                    <a href="contact.html" class="px-6 py-2.5 bg-black text-yellow-500 text-sm font-bold rounded-lg hover:bg-yellow-500 hover:text-black transition-all shadow-lg border border-yellow-500/30 uppercase tracking-wider">Get Quote</a>
                 </div>
                 
                 <!-- Mobile Menu Button -->
@@ -143,11 +157,12 @@
             <a href="index.html" class="text-2xl font-bold text-gray-800 hover:text-safety-neon-orange transition-all uppercase tracking-tight">HOME</a>
             <a href="about.html" class="text-2xl font-bold text-gray-800 hover:text-safety-neon-orange transition-all uppercase tracking-tight">ABOUT US</a>
             <a href="products.html" class="text-2xl font-bold text-safety-neon-orange transition-all uppercase tracking-tight">PRODUCTS</a>
+            <a href="applications.html" class="text-2xl font-bold text-gray-800 hover:text-safety-neon-orange transition-all uppercase tracking-tight">APPLICATIONS</a>
             <a href="brands.html" class="text-2xl font-bold text-gray-800 hover:text-safety-neon-orange transition-all uppercase tracking-tight">BRANDS</a>
             <a href="contact.html" class="text-2xl font-bold text-gray-800 hover:text-safety-neon-orange transition-all uppercase tracking-tight">CONTACT</a>
             
             <div class="mt-4 pt-8 border-t border-gray-100">
-                <a href="contact.html" class="flex items-center justify-center w-full py-4 bg-safety-neon-orange text-white font-bold rounded-xl shadow-lg shadow-safety-neon-orange/20 uppercase tracking-wider">Get Quote</a>
+                <a href="contact.html" class="flex items-center justify-center w-full py-4 bg-black text-yellow-500 font-bold rounded-xl shadow-lg border border-yellow-500/30 uppercase tracking-wider hover:bg-yellow-500 hover:text-black transition-all">Get Quote</a>
             </div>
         </nav>
     </div>
@@ -162,8 +177,8 @@
                     </button>
 
                     <!-- Sidebar Filter -->
-                    <aside id="sidebar-filter" class="md:w-1/3 lg:w-1/4 hidden md:block">
-                        <div class="bg-white rounded-2xl shadow-xl p-8 sticky top-10 border border-gray-100 z-30 max-h-[calc(100vh-80px)] overflow-y-auto custom-scrollbar">
+                    <aside id="sidebar-filter" class="md:w-1/3 lg:w-1/4 hidden md:block sticky top-28 self-start z-30">
+                        <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 max-h-[calc(100vh-140px)] overflow-y-auto custom-scrollbar">
                             <h2 class="text-2xl font-black text-safety-charcoal mb-8 flex items-center gap-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-safety-neon-orange"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="2" y1="14" x2="6" y2="14"/><line x1="10" y1="12" x2="14" y2="12"/><line x1="18" y1="16" x2="22" y2="16"/></svg>
                                 CATEGORIES
@@ -174,12 +189,21 @@
                                 <div class="pt-2 pb-2 text-xs font-black text-gray-400 uppercase tracking-widest border-b border-gray-100 mb-2">1. PERSONAL PROTECTION (PPE)</div>
                                 <div class="grid grid-cols-1 gap-1 pl-2">
                                     <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="ppe-head">Head Protection</button>
+                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="ppe-eye">Eye Protection</button>
+                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="ppe-respiratory">Respiratory</button>
+                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="ppe-hearing">Hearing Protection</button>
                                     <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="ppe-hand">Hand Protection</button>
                                     <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="ppe-foot">Foot Protection</button>
+                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="ppe-fall">Fall Protection</button>
                                 </div>
 
-                                <div class="pt-6 pb-2 text-xs font-black text-gray-400 uppercase tracking-widest border-b border-gray-100 mb-2">2. ROAD SAFETY</div>
-                                <button class="w-full text-left px-4 py-3 rounded-xl hover:bg-gray-100 text-gray-700 font-semibold transition-all filter-btn" data-filter="road-safety">Road Safety Equipment</button>
+                                <div class="pt-6 pb-2 text-xs font-black text-gray-400 uppercase tracking-widest border-b border-gray-100 mb-2">2. SAFETY & PROTECTION</div>
+                                <div class="grid grid-cols-1 gap-1 pl-2">
+                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="road-safety">Traffic Protection</button>
+                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="fire-protection">Fire Protection</button>
+                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="disaster-protection">Disaster Protection</button>
+                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="safety-wears">Safety Wears</button>
+                                </div>
                             </div>
                         </div>
                     </aside>
@@ -413,10 +437,10 @@
                             </div>
 
                             <!-- PPE Body - Proximity -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-body">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.50 PM (2).jpeg" alt="Proximity Suit" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Body Protection</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Aluminized Fire Proximity Suit</h3>
@@ -434,10 +458,10 @@
                             </div>
 
                             <!-- PPE Body - Fire Fighter -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-body">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.50 PM (3).jpeg" alt="Fire Suit" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Body Protection</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Full Body Fire Fighter Suit</h3>
@@ -455,10 +479,10 @@
                             </div>
 
                             <!-- PPE Body - Chemical -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-body">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.45 PM (1).jpeg" alt="Chemical Suit" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Body Protection</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Acid & Chemical Resistant Suit</h3>
@@ -476,10 +500,10 @@
                             </div>
 
                             <!-- PPE Body - Vest -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-body">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.51 PM (1).jpeg" alt="Safety Vest" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Body Protection</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Reflective High-Vis Safety Vest</h3>
@@ -497,10 +521,10 @@
                             </div>
 
                             <!-- PPE Body - Medical -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-body">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.46 PM (2).jpeg" alt="Medical Scrub" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Body Protection</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Blue Medical Coverall Set</h3>
@@ -521,7 +545,7 @@
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="road-safety">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.53 PM (1).jpeg" alt="Cable Ramp" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Road Safety</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Traffic Protection</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Industrial Cable Protection Ramp</h3>
@@ -542,7 +566,7 @@
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="road-safety">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.51 PM (2).jpeg" alt="Windsock" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Road Safety</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Traffic Protection</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Industrial Windsock System</h3>
@@ -560,10 +584,10 @@
                             </div>
 
                             <!-- Industrial Safety - Eye Wash -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="industrial-safety">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="fire-protection">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.54 PM.jpeg" alt="Eye Wash" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Industrial Safety</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Fire Protection</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Wall-Mounted Eye Wash Station</h3>
@@ -581,10 +605,10 @@
                             </div>
 
                             <!-- Medical & Emergency - Stretcher -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="medical-emergency">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="disaster-protection">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.52 PM (2).jpeg" alt="Stretcher" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Emergency Response</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Disaster Protection</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Foldable Emergency Stretcher</h3>
@@ -602,10 +626,10 @@
                             </div>
 
                             <!-- Medical & Emergency - PM Gloves -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="medical-emergency">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="disaster-protection">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.59 PM (1).jpeg" alt="PM Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Medical Safety</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Disaster Protection</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Post Mortem Latex Gloves</h3>
@@ -645,10 +669,10 @@
                             </div>
 
                             <!-- Emergency - First Aid -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="medical-emergency">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="disaster-protection">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.43 PM (1).jpeg" alt="First Aid Kit" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Emergency</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Disaster Protection</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Industrial First Aid Station</h3>
@@ -687,10 +711,10 @@
                             </div>
 
                             <!-- PPE Body - Hazmat -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-body">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.48 PM (2).jpeg" alt="Hazmat Suit" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Body Protection</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Full Body Chemical Protection Suit</h3>
@@ -751,10 +775,10 @@
                             </div>
 
                             <!-- Plant Safety -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="industrial-safety">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="fire-protection">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.54 PM (1).jpeg" alt="Safety Shower" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Emergency</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Disaster Protection</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Emergency Decontamination Station</h3>
@@ -772,10 +796,10 @@
                             </div>
 
                             <!-- PPE Body - Coveralls -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-body">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.45 PM.jpeg" alt="Coveralls" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Body Protection</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Industrial Safety Work Coveralls</h3>
@@ -793,10 +817,10 @@
                             </div>
 
                             <!-- Body - Lab Coat -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-body">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.45 PM (2).jpeg" alt="Lab Coat" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Body Protection</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Arc Flash Safety Suit</h3>
@@ -840,7 +864,7 @@
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="road-safety">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.35 PM (1).jpeg" alt="Traffic Cone" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Road Safety</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Traffic Protection</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Premium Reflective Traffic Cone</h3>
@@ -881,7 +905,7 @@
 
 
                             <!-- Industrial Safety - Extinguisher -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="industrial-safety">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="fire-protection">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.40 PM.jpeg" alt="Fire Extinguisher" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Fire Safety</div>
@@ -968,10 +992,10 @@
                             </div>
 
                             <!-- Industrial Safety - First Aid Cabinet -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="medical-emergency">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="disaster-protection">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.43 PM (2).jpeg" alt="First Aid Cabinet" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Emergency</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Disaster Protection</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Large First Aid Storage Cabinet</h3>
@@ -992,7 +1016,7 @@
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="road-safety">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.44 PM (1).jpeg" alt="Convex Mirror" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Road Safety</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Traffic Protection</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Industrial Convex Security Mirror</h3>
@@ -1010,10 +1034,10 @@
                             </div>
 
                             <!-- PPE Body - Apron -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-body">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.47 PM.jpeg" alt="Safety Apron" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Body Protection</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">White Industrial Lab Coat</h3>
@@ -1054,10 +1078,10 @@
                             </div>
 
                             <!-- PPE Body - Lab Coat -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-body">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.49 PM.jpeg" alt="Lab Coat" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Body Protection</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Disposable Polypropylene Lab Coat</h3>
@@ -1075,7 +1099,7 @@
                             </div>
 
                             <!-- Industrial Safety - Wheel Chock -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="industrial-safety">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="fire-protection">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.49 PM (1).jpeg" alt="Wheel Chock" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Vehicle Safety</div>
@@ -1096,10 +1120,10 @@
                             </div>
 
                             <!-- PPE Body - Safety Suit -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-body">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.50 PM.jpeg" alt="Coverall" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Body Protection</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Industrial Leather Welding Apron</h3>
@@ -1144,7 +1168,7 @@
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="road-safety">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.46 PM.jpeg" alt="Warning Lamp" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Road Safety</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Traffic Protection</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">LED Solar Warning Lamp</h3>
@@ -1247,7 +1271,7 @@
                             </div>
 
                             <!-- Industrial Safety - Fire Hose -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="industrial-safety">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="fire-protection">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.40 PM (1).jpeg" alt="Fire Hose" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Fire Safety</div>
@@ -1331,10 +1355,10 @@
                             </div>
 
                             <!-- PPE Body - Work Suit -->
-                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-body">
+                            <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
                                     <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.50 PM (1).jpeg" alt="Work Suit" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
-                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Body Protection</div>
+                                    <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
                                 <div class="p-8 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Industrial Safety Apron</h3>
@@ -1436,6 +1460,16 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+
+                        <!-- No Products Found Message -->
+                        <div id="no-products" class="hidden flex-col items-center justify-center py-24 text-center bg-white rounded-3xl shadow-lg border border-gray-100 mt-8">
+                            <div class="w-24 h-24 bg-gray-50 rounded-full flex items-center justify-center mb-8">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                            </div>
+                            <h3 class="text-3xl font-black text-safety-charcoal mb-4 uppercase tracking-tight">No product currently has</h3>
+                            <p class="text-gray-500 text-lg max-w-md mx-auto mb-10 font-medium">We are currently updating our inventory for this category. Please contact us for direct inquiries and bulk requirements.</p>
+                            <a href="https://wa.me/919811048483" class="bg-black text-yellow-500 px-10 py-4 rounded-2xl font-black uppercase tracking-widest transition-all hover:bg-yellow-500 hover:text-black shadow-xl border border-yellow-500/30">Inquire Now</a>
                         </div>
 
                         <!-- Inquiry CTA -->
@@ -1695,8 +1729,8 @@
     <script>self.__next_f.push([1, "1c:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])</script>
     <script>self.__next_f.push([1, "1f:I[27201,[\"/_next/static/chunks/ff1a16fafef87110.js\",\"/_next/static/chunks/d2be314c3ece3fbe.js\"],\"IconMark\"]\n1a:null\n1e:[[\"$\",\"title\",\"0\",{\"children\":\"Safety Experts | Industrial Safety Equipment Supplier Delhi\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Supplier \u0026 authorised dealer of PPE kits, safety helmets, industrial gloves, fire safety equipment \u0026 fall protection systems in Delhi NCR.\"}],[\"$\",\"meta\",\"2\",{\"name\":\"keywords\",\"content\":\"safety equipment,PPE,industrial safety,hard hats,safety gloves,quote,Delhi OEM,safety experts\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:title\",\"content\":\"Safety Experts | Industrial Safety Equipment Supplier Delhi\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:description\",\"content\":\"Supplier \u0026 authorised dealer of PPE kits, safety helmets, industrial gloves, fire safety equipment \u0026 fall protection systems in Delhi NCR.\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"6\",{\"name\":\"twitter:card\",\"content\":\"summary\"}],[\"$\",\"meta\",\"7\",{\"name\":\"twitter:title\",\"content\":\"Safety Experts | Industrial Safety Equipment Supplier Delhi\"}],[\"$\",\"meta\",\"8\",{\"name\":\"twitter:description\",\"content\":\"Supplier \u0026 authorised dealer of PPE kits, safety helmets, industrial gloves, fire safety equipment \u0026 fall protection systems in Delhi NCR.\"}],[\"$\",\"link\",\"9\",{\"rel\":\"icon\",\"href\":\"favicon28a7.ico?favicon.0b3bf435.ico\",\"sizes\":\"256x256\",\"type\":\"image/x-icon\"}],[\"$\",\"$L1f\    <script>
         // Search and Filtering Logic
-        const searchInput = document.querySelector('input[type="search"]');
-        const searchForm = document.querySelector('form');
+        const searchInput = document.getElementById('header-search-input');
+        const searchForm = document.getElementById('header-search-form');
         const productCards = document.querySelectorAll('.product-card');
         const filterButtons = document.querySelectorAll('.filter-btn');
         const categoryLinks = document.querySelectorAll('aside nav a');
@@ -1717,37 +1751,42 @@
         }
 
         // Inject WhatsApp Query Buttons
-        productCards.forEach(card => {
-            const title = card.querySelector('h3').textContent;
-            const footer = card.querySelector('.mt-auto.pt-6');
-            if (footer) {
-                const buttonContainer = document.createElement('div');
-                buttonContainer.className = 'flex items-center gap-2';
-                
-                // Get existing contact button
-                const existingBtn = footer.querySelector('a[href="contact.html"]');
-                if (existingBtn) {
-                    // Create WhatsApp Button
+        function injectWhatsAppButtons() {
+            const productCards = document.querySelectorAll('.product-card, .group.bg-white.rounded-xl, .group.bg-white.rounded-3xl');
+            productCards.forEach(card => {
+                if (card.querySelector('.wa-query-btn')) return;
+
+                const titleEl = card.querySelector('h3');
+                if (!titleEl) return;
+                const title = titleEl.textContent.trim();
+
+                const footer = card.querySelector('.mt-auto');
+                if (footer) {
                     const waButton = document.createElement('a');
                     waButton.href = `https://wa.me/919811048483?text=${encodeURIComponent('Hi Safety Experts, I am interested in the "' + title + '". Please provide more information and a quote.')}`;
                     waButton.target = '_blank';
-                    waButton.className = 'flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-xl text-xs font-bold hover:bg-green-700 transition-all shadow-lg hover:shadow-green-500/20';
+                    waButton.className = 'wa-query-btn';
                     waButton.innerHTML = `
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
                         Query
                     `;
                     
-                    // Wrap existing button and new button
-                    existingBtn.className = 'w-10 h-10 bg-safety-charcoal text-white rounded-xl flex items-center justify-center hover:bg-safety-neon-orange transition-all shadow-lg hover:shadow-safety-neon-orange/20 group/btn';
-                    
-                    buttonContainer.appendChild(waButton);
-                    buttonContainer.appendChild(existingBtn);
-                    footer.appendChild(buttonContainer);
+                    const existingLink = footer.querySelector('a');
+                    if (existingLink) {
+                        existingLink.parentNode.insertBefore(waButton, existingLink);
+                        waButton.parentNode.classList.add('flex', 'items-center', 'justify-between', 'w-full', 'gap-2');
+                    } else {
+                        footer.appendChild(waButton);
+                        footer.classList.add('flex', 'items-center', 'justify-between', 'w-full', 'gap-2');
+                    }
                 }
-            }
-        });
+            });
+        }
+        injectWhatsAppButtons();
+        setTimeout(injectWhatsAppButtons, 2000);
 
         function updateDisplay() {
+            let visibleCount = 0;
             productCards.forEach(card => {
                 const title = card.querySelector('h3').textContent.toLowerCase();
                 const category = card.getAttribute('data-category');
@@ -1757,10 +1796,22 @@
 
                 if (matchesSearch && matchesCategory) {
                     card.style.display = 'flex';
+                    visibleCount++;
                 } else {
                     card.style.display = 'none';
                 }
             });
+
+            const noProductsMsg = document.getElementById('no-products');
+            if (noProductsMsg) {
+                if (visibleCount === 0) {
+                    noProductsMsg.classList.remove('hidden');
+                    noProductsMsg.classList.add('flex');
+                } else {
+                    noProductsMsg.classList.add('hidden');
+                    noProductsMsg.classList.remove('flex');
+                }
+            }
         }
 
         // Category Filter Logic
@@ -1780,25 +1831,27 @@
         });
 
         // Search Logic
-        searchForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            searchQuery = searchInput.value.trim();
-            updateDisplay();
-            
-            // Update URL without reloading
-            const newUrl = new URL(window.location);
-            if (searchQuery) {
-                newUrl.searchParams.set('search', searchQuery);
-            } else {
-                newUrl.searchParams.delete('search');
-            }
-            window.history.pushState({}, '', newUrl);
-        });
+        if (searchForm && searchInput) {
+            searchForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                searchQuery = searchInput.value.trim();
+                updateDisplay();
+                
+                // Update URL without reloading
+                const newUrl = new URL(window.location);
+                if (searchQuery) {
+                    newUrl.searchParams.set('search', searchQuery);
+                } else {
+                    newUrl.searchParams.delete('search');
+                }
+                window.history.pushState({}, '', newUrl);
+            });
 
-        searchInput.addEventListener('input', () => {
-            searchQuery = searchInput.value.trim();
-            updateDisplay();
-        });
+            searchInput.addEventListener('input', () => {
+                searchQuery = searchInput.value.trim();
+                updateDisplay();
+            });
+        }
 
         // Check for search or filter param in URL
         const urlParams = new URLSearchParams(window.location.search);
@@ -1891,6 +1944,13 @@
             });
         }
     </script>
+    <a href="https://wa.me/919811048483" class="whatsapp-float" target="_blank">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+        </svg>
+    </a>
+
+    <script src="assets/js/whatsapp-query.js"></script>
 </body>
 
 </html>

@@ -70,8 +70,8 @@
         content="SafetyPro - Industrial safety equipment supplier. Quality PPE and B2B solutions." />
     <link rel="icon" href="favicon28a7.ico?favicon.0b3bf435.ico" sizes="256x256" type="image/x-icon" />
     <script src="_next/static/chunks/a6dad97d9634a72d.js" noModule="">
-
     </script>
+    <link rel="stylesheet" href="assets/css/theme-overrides.css">
 </head>
 
 <body class="barlow_3c7cc451-module__rrEuMG__variable antialiased min-h-screen flex flex-col">
@@ -89,9 +89,9 @@
 
                 <!-- Desktop Search Bar -->
                 <div class="hidden md:flex flex-1 max-w-lg mx-6 lg:mx-12">
-                    <form action="products.html" method="GET" class="relative w-full flex">
+                    <form id="header-search-form" action="products.html" method="GET" class="relative w-full flex">
                         <div class="relative flex-1">
-                            <input type="search" name="search" placeholder="Search for safety products..." class="w-full h-12 bg-gray-50 border border-gray-200 rounded-l-xl py-3 px-5 pl-12 focus:outline-none focus:border-safety-neon-orange transition-all text-sm font-bold text-safety-charcoal">
+                            <input id="header-search-input" type="search" name="search" placeholder="Search for safety products..." class="w-full h-12 bg-gray-50 border border-gray-200 rounded-l-xl py-3 px-5 pl-12 focus:outline-none focus:border-safety-neon-orange transition-all text-sm font-bold text-safety-charcoal">
                             <div class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
                             </div>
@@ -105,6 +105,7 @@
                     <a href="index.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">Home</a>
                     <a href="about.html" class="text-sm font-bold text-safety-neon-orange transition-colors uppercase tracking-wider">About</a>
                     <a href="products.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">Products</a>
+                    <a href="applications.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">Applications</a>
                     <a href="brands.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">Brands</a>
                     <a href="contact.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">Contact</a>
                     <a href="contact.html" class="px-6 py-2.5 bg-safety-neon-orange text-white text-sm font-bold rounded-lg hover:bg-safety-charcoal transition-all shadow-lg shadow-safety-neon-orange/20 uppercase tracking-wider">Get Quote</a>
@@ -175,7 +176,7 @@
                     <div class="flex flex-col lg:flex-row gap-16 items-center">
                         <div class="lg:w-1/2">
                             <div class="relative">
-                                <div class="absolute -top-4 -left-4 w-24 h-24 bg-safety-neon-orange/10 rounded-full -z-10"></div>
+                                <!-- Removed decorative circle -->
                                 <h2 class="text-3xl font-bold text-safety-charcoal mb-8 border-l-4 border-safety-neon-orange pl-6">Reliable & Trusted Supplier</h2>
                                 <div class="space-y-6 text-gray-600 leading-relaxed text-lg">
                                     <p>Safety Experts, Delhi-06 is a reliable and trusted supplier of industrial safety products and Personal Protective Equipment (PPE), dedicated to ensuring safer workplaces across various industries. Located in the well-known industrial hub of Ajmeri Gate, New Delhi, we have built a strong reputation for delivering quality products, prompt service, and customer satisfaction.</p>
@@ -215,8 +216,11 @@
                         
                         <!-- Message Column -->
                         <div class="w-full md:w-2/3 p-10 md:p-16 relative flex flex-col justify-center bg-white">
-                            <div class="absolute top-10 left-10 text-gray-100 opacity-30 select-none">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V5C14.017 3.89543 14.9124 3 16.017 3H19.017C21.2261 3 23.017 4.79086 23.017 7V15C23.017 18.3137 20.3307 21 17.017 21H14.017ZM1 21L1 18C1 16.8954 1.89543 16 3 16H6C6.55228 16 7 15.5523 7 15V9C7 8.44772 6.55228 8 6 8H3C1.89543 8 1 7.10457 1 6V5C1 3.89543 1.89543 3 3 3H6C8.20914 3 10 4.79086 10 7V15C10 18.3137 7.31371 21 4 21H1Z"></path></svg>
+                            <!-- Decorative Quote Mark -->
+                            <div class="absolute -top-4 -left-4 text-safety-neon-orange/5 select-none pointer-events-none transform -rotate-12">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V5C14.017 3.89543 14.9124 3 16.017 3H19.017C21.2261 3 23.017 4.79086 23.017 7V15C23.017 18.3137 20.3307 21 17.017 21H14.017ZM1 21L1 18C1 16.8954 1.89543 16 3 16H6C6.55228 16 7 15.5523 7 15V9C7 8.44772 6.55228 8 6 8H3C1.89543 8 1 7.10457 1 6V5C1 3.89543 1.89543 3 3 3H6C8.20914 3 10 4.79086 10 7V15C10 18.3137 7.31371 21 4 21H1Z"></path>
+                                </svg>
                             </div>
                             <div class="relative z-10 space-y-8">
                                 <div class="text-safety-charcoal italic text-xl md:text-2xl leading-relaxed font-semibold border-l-4 border-safety-neon-orange pl-6">
@@ -240,7 +244,7 @@
                             <div class="absolute top-0 right-0 w-32 h-32 bg-safety-neon-orange/5 rounded-bl-full"></div>
                             <div class="relative z-10">
                                 <div class="w-16 h-16 bg-safety-neon-orange rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-safety-neon-orange/20">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-safety-charcoal"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
                                 </div>
                                 <h3 class="text-3xl font-bold mb-6 text-safety-neon-orange">Our Mission</h3>
                                 <p class="text-gray-600 leading-relaxed text-lg">"Our mission is to provide high-quality and reliable safety solutions, including Personal Protective Equipment (PPE) and traffic safety products, that ensure maximum protection for workers across industries. We are committed to delivering durable products, prompt service, and customized solutions that help our clients maintain safe, compliant, and efficient workplaces."</p>
@@ -250,7 +254,7 @@
                             <div class="absolute top-0 right-0 w-32 h-32 bg-safety-neon-orange/5 rounded-bl-full"></div>
                             <div class="relative z-10">
                                 <div class="w-16 h-16 bg-safety-neon-orange/10 rounded-2xl flex items-center justify-center mb-6 border border-safety-neon-orange/20">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-safety-neon-orange"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-safety-charcoal"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
                                 </div>
                                 <h3 class="text-3xl font-bold mb-6 text-safety-neon-orange">Our Vision</h3>
                                 <p class="text-gray-600 leading-relaxed text-lg">"Our vision is to become a leading and trusted name in the safety industry by continuously enhancing product quality, expanding our range of safety solutions, and setting benchmarks in customer satisfaction. We aim to contribute towards building a safer industrial environment where every worker returns home safely."</p>
@@ -264,29 +268,29 @@
                 <div class="container mx-auto px-4">
                     <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
                         <div class="text-center group">
-                            <div class="w-20 h-20 mx-auto rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 group-hover:bg-safety-neon-orange group-hover:border-safety-neon-orange transition-all duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-safety-neon-orange group-hover:text-white"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+                            <div class="w-20 h-20 mx-auto rounded-2xl bg-white/5 border-2 border-safety-neon-orange flex items-center justify-center mb-6 group-hover:bg-safety-neon-orange transition-all duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-safety-neon-orange group-hover:text-safety-charcoal"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
                             </div>
                             <h3 class="text-white font-bold text-xl mb-2">Quality First</h3>
                             <p class="text-gray-400">Certified safety standards</p>
                         </div>
                         <div class="text-center group">
-                            <div class="w-20 h-20 mx-auto rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 group-hover:bg-safety-neon-orange group-hover:border-safety-neon-orange transition-all duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-safety-neon-orange group-hover:text-white"><circle cx="12" cy="8" r="6"/><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/></svg>
+                            <div class="w-20 h-20 mx-auto rounded-2xl bg-white/5 border-2 border-safety-neon-orange flex items-center justify-center mb-6 group-hover:bg-safety-neon-orange transition-all duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-safety-neon-orange group-hover:text-safety-charcoal"><circle cx="12" cy="8" r="6"/><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/></svg>
                             </div>
                             <h3 class="text-white font-bold text-xl mb-2">Trusted Brands</h3>
                             <p class="text-gray-400">Authorized partners</p>
                         </div>
                         <div class="text-center group">
-                            <div class="w-20 h-20 mx-auto rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 group-hover:bg-safety-neon-orange group-hover:border-safety-neon-orange transition-all duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-safety-neon-orange group-hover:text-white"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            <div class="w-20 h-20 mx-auto rounded-2xl bg-white/5 border-2 border-safety-neon-orange flex items-center justify-center mb-6 group-hover:bg-safety-neon-orange transition-all duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-safety-neon-orange group-hover:text-safety-charcoal"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                             </div>
                             <h3 class="text-white font-bold text-xl mb-2">Expert Team</h3>
                             <p class="text-gray-400">Safety consulting</p>
                         </div>
                         <div class="text-center group">
-                            <div class="w-20 h-20 mx-auto rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 group-hover:bg-safety-neon-orange group-hover:border-safety-neon-orange transition-all duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-safety-neon-orange group-hover:text-white"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            <div class="w-20 h-20 mx-auto rounded-2xl bg-white/5 border-2 border-safety-neon-orange flex items-center justify-center mb-6 group-hover:bg-safety-neon-orange transition-all duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-safety-neon-orange group-hover:text-safety-charcoal"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                             </div>
                             <h3 class="text-white font-bold text-xl mb-2">Responsibility</h3>
                             <p class="text-gray-400">Building trust through safety</p>
@@ -539,6 +543,13 @@
             });
         }
     </script>
+    <a href="https://wa.me/919811048483" class="whatsapp-float" target="_blank">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+        </svg>
+    </a>
+
+    <script src="assets/js/whatsapp-query.js"></script>
 </body>
 
 </html>
