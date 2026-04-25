@@ -27,7 +27,7 @@
                     let actionGroup = footer.querySelector('.card-actions');
                     if (!actionGroup) {
                         actionGroup = document.createElement('div');
-                        actionGroup.className = 'card-actions flex items-center gap-3 shrink-0 ml-auto';
+                        actionGroup.className = 'card-actions flex items-center gap-1.5 shrink-0 ml-auto';
                         // Insert the group where the original link was
                         existingLink.parentNode.insertBefore(actionGroup, existingLink);
                         // Move the original link inside the group

@@ -187,22 +187,34 @@
                                 <button class="w-full text-left px-4 py-3 rounded-xl bg-safety-neon-orange text-white font-bold transition-all shadow-lg shadow-safety-neon-orange/20 filter-btn mb-4" data-filter="all">All Categories</button>
                                 
                                 <div class="pt-2 pb-2 text-xs font-black text-gray-400 uppercase tracking-widest border-b border-gray-100 mb-2">1. PERSONAL PROTECTION (PPE)</div>
-                                <div class="grid grid-cols-1 gap-1 pl-2">
+                                <div class="grid grid-cols-1 gap-1 pl-2 mb-6">
                                     <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="ppe-head">Head Protection</button>
                                     <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="ppe-eye">Eye Protection</button>
-                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="ppe-respiratory">Respiratory</button>
-                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="ppe-hearing">Hearing Protection</button>
                                     <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="ppe-hand">Hand Protection</button>
                                     <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="ppe-foot">Foot Protection</button>
-                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="ppe-fall">Fall Protection</button>
+                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="ppe-hearing">Hearing Protection</button>
+                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="ppe-respiratory">Respiratory</button>
+                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="safety-wears">Protective Workwear</button>
                                 </div>
 
-                                <div class="pt-6 pb-2 text-xs font-black text-gray-400 uppercase tracking-widest border-b border-gray-100 mb-2">2. SAFETY & PROTECTION</div>
-                                <div class="grid grid-cols-1 gap-1 pl-2">
-                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="road-safety">Traffic Protection</button>
-                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="fire-protection">Fire Protection</button>
-                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="disaster-protection">Disaster Protection</button>
-                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="safety-wears">Safety Wears</button>
+                                <div class="pt-4 pb-2 text-xs font-black text-gray-400 uppercase tracking-widest border-b border-gray-100 mb-2">2. ROAD SAFETY</div>
+                                <div class="grid grid-cols-1 gap-1 pl-2 mb-6">
+                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="road-safety">Road Safety Products</button>
+                                </div>
+
+                                <div class="pt-4 pb-2 text-xs font-black text-gray-400 uppercase tracking-widest border-b border-gray-100 mb-2">3. FALL PROTECTION</div>
+                                <div class="grid grid-cols-1 gap-1 pl-2 mb-6">
+                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="ppe-fall">Fall Protection Gear</button>
+                                </div>
+
+                                <div class="pt-4 pb-2 text-xs font-black text-gray-400 uppercase tracking-widest border-b border-gray-100 mb-2">4. FIRE FIGHTING</div>
+                                <div class="grid grid-cols-1 gap-1 pl-2 mb-6">
+                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="fire-protection">Fire Safety Equipment</button>
+                                </div>
+
+                                <div class="pt-4 pb-2 text-xs font-black text-gray-400 uppercase tracking-widest border-b border-gray-100 mb-2">5. DISASTER MANAGEMENT</div>
+                                <div class="grid grid-cols-1 gap-1 pl-2 mb-6">
+                                    <button class="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-50 text-gray-700 text-sm font-semibold transition-all filter-btn" data-filter="disaster-protection">Disaster Management</button>
                                 </div>
                             </div>
                         </div>
@@ -225,14 +237,14 @@
                             </div>
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8" id="product-grid">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="product-grid">
                             <!-- PPE Head -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-head">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.55 PM (1).jpeg" alt="Safety Helmet" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.55 PM (1).jpeg" alt="Safety Helmet" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Head Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Industrial Pro Safety Helmet</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">High-density polyethylene shell with 6-point suspension for maximum impact protection.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -250,10 +262,10 @@
                             <!-- PPE Hand - Chainmail -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.41 PM.jpeg" alt="Chainmail Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.41 PM.jpeg" alt="Chainmail Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">SS Chainmail Safety Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Stainless steel mesh gloves providing ultimate cut protection for food processing and industrial use.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -271,10 +283,10 @@
                             <!-- PPE Hand - Ferra King -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.23.00 PM (1).jpeg" alt="Industrial Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.23.00 PM (1).jpeg" alt="Industrial Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Ferra King Industrial Latex</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Heavyweight flock-lined latex gloves for chemical handling and industrial cleaning.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -292,10 +304,10 @@
                             <!-- PPE Hand - Kevlar -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.42 PM.jpeg" alt="Kevlar Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.42 PM.jpeg" alt="Kevlar Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Kevlar Heat Resistant Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Para-aramid fiber gloves providing exceptional heat resistance and cut protection.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -313,10 +325,10 @@
                             <!-- PPE Hand - Frontier -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.57 PM (1).jpeg" alt="Nitrile Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.57 PM (1).jpeg" alt="Nitrile Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Frontier Nitrile Flocklined</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Green nitrile gloves with non-slip grip, ideal for chemical and industrial handling.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -334,10 +346,10 @@
                             <!-- PPE Hand - Impact -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.42 PM (1).jpeg" alt="Impact Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.42 PM (1).jpeg" alt="Impact Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Impact Resistant Safety Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Thermoplastic Rubber (TPR) impact protection with nitrile coating for superior grip.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -355,10 +367,10 @@
                             <!-- PPE Hand - Electrical -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.38 PM (1).jpeg" alt="Electrical Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.38 PM (1).jpeg" alt="Electrical Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Electrical Insulating Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">High-voltage rubber insulating gloves for electrical safety and line maintenance.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -376,10 +388,10 @@
                             <!-- PPE Hand - Honeywell -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.56 PM (1).jpeg" alt="PU Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.56 PM (1).jpeg" alt="PU Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Honeywell PU Coating Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Lightweight PU coated gloves for precision handling and anti-static protection.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -397,10 +409,10 @@
                             <!-- PPE Hand - Blue Dotted -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.23.01 PM.jpeg" alt="Dotted Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.23.01 PM.jpeg" alt="Dotted Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Blue Dotted Grip Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Knitted cotton gloves with blue PVC dots for enhanced grip and manual dexterity.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -418,10 +430,10 @@
                             <!-- PPE Foot -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-foot">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.52 PM (1).jpeg" alt="Safety Shoes" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.52 PM (1).jpeg" alt="Safety Shoes" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Foot Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Industrial Safety Shoes</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Heavy-duty safety shoes with steel toe protection and anti-slip rubber soles.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -439,10 +451,10 @@
                             <!-- PPE Body - Proximity -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.50 PM (2).jpeg" alt="Proximity Suit" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.50 PM (2).jpeg" alt="Proximity Suit" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Aluminized Fire Proximity Suit</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Complete heat-reflective suit designed for extreme temperatures and fire proximity tasks.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -460,10 +472,10 @@
                             <!-- PPE Body - Fire Fighter -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.50 PM (3).jpeg" alt="Fire Suit" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.50 PM (3).jpeg" alt="Fire Suit" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Full Body Fire Fighter Suit</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Professional fire-fighting gear with reflective stripes and multi-layer thermal protection.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -481,10 +493,10 @@
                             <!-- PPE Body - Chemical -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.45 PM (1).jpeg" alt="Chemical Suit" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.45 PM (1).jpeg" alt="Chemical Suit" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Acid & Chemical Resistant Suit</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Complete protection against acid splashes and hazardous chemical handling.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -502,10 +514,10 @@
                             <!-- PPE Body - Vest -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.51 PM (1).jpeg" alt="Safety Vest" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.51 PM (1).jpeg" alt="Safety Vest" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Reflective High-Vis Safety Vest</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Fluorescent orange vest with silver reflective tape for visibility on site.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -523,10 +535,10 @@
                             <!-- PPE Body - Medical -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.46 PM (2).jpeg" alt="Medical Scrub" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.46 PM (2).jpeg" alt="Medical Scrub" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Blue Medical Coverall Set</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Complete protective coverall set for medical and cleanroom environments.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -544,10 +556,10 @@
                             <!-- Road Safety - Cable Ramp -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="road-safety">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.53 PM (1).jpeg" alt="Cable Ramp" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.53 PM (1).jpeg" alt="Cable Ramp" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Traffic Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Industrial Cable Protection Ramp</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Heavy-duty rubber cable protectors with high-visibility yellow lids for safety.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -565,10 +577,10 @@
                             <!-- Road Safety - Windsock -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="road-safety">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.51 PM (2).jpeg" alt="Windsock" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.51 PM (2).jpeg" alt="Windsock" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Traffic Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Industrial Windsock System</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">High-visibility wind indicator system for industrial sites and aviation safety.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -586,10 +598,10 @@
                             <!-- Industrial Safety - Eye Wash -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="fire-protection">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.54 PM.jpeg" alt="Eye Wash" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.54 PM.jpeg" alt="Eye Wash" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Fire Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Wall-Mounted Eye Wash Station</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Stainless steel emergency eye wash station for immediate first aid in industrial environments.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -607,10 +619,10 @@
                             <!-- Medical & Emergency - Stretcher -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="disaster-protection">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.52 PM (2).jpeg" alt="Stretcher" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.52 PM (2).jpeg" alt="Stretcher" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Disaster Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Foldable Emergency Stretcher</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Lightweight aluminum alloy foldable stretcher with safety straps for medical transport.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -628,10 +640,10 @@
                             <!-- Medical & Emergency - PM Gloves -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="disaster-protection">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.59 PM (1).jpeg" alt="PM Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.59 PM (1).jpeg" alt="PM Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Disaster Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Post Mortem Latex Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">High-quality Royal brand post mortem gloves for specialized medical and pathology use.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -649,10 +661,10 @@
                             <!-- PPE Hand - Dotted -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.38 PM (2).jpeg" alt="Dotted Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.38 PM (2).jpeg" alt="Dotted Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Dotted Cotton Grip Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">High-grip dotted cotton gloves for secure handling and anti-slip protection.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -671,10 +683,10 @@
                             <!-- Emergency - First Aid -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="disaster-protection">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.43 PM (1).jpeg" alt="First Aid Kit" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.43 PM (1).jpeg" alt="First Aid Kit" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Disaster Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Industrial First Aid Station</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Wall-mounted comprehensive medical kit for workplace trauma management.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -692,10 +704,10 @@
                             <!-- PPE Hand - Orange PVC -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.43 PM (3).jpeg" alt="Orange Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.43 PM (3).jpeg" alt="Orange Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Orange Heavy-Duty PVC Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Durable PVC coated gloves for chemical handling and industrial maintenance.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -713,10 +725,10 @@
                             <!-- PPE Body - Hazmat -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.48 PM (2).jpeg" alt="Hazmat Suit" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.48 PM (2).jpeg" alt="Hazmat Suit" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Full Body Chemical Protection Suit</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Disposable yellow hazmat suit providing full-body protection against hazardous chemicals and aerosols.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -735,10 +747,10 @@
                             <!-- PPE Hand - Cotton Work -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.41 PM (3).jpeg" alt="Cotton Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.41 PM (3).jpeg" alt="Cotton Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Knitted Cotton Work Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Durable seamless knitted cotton gloves for general purpose handling and dust protection.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -756,10 +768,10 @@
                             <!-- Road Safety - Tape -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="road-safety">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.49 PM (2).jpeg" alt="Caution Tape" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.49 PM (2).jpeg" alt="Caution Tape" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Signage</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Hazard Warning Tape</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Durable non-adhesive polyethylene caution tape for marking danger zones.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -777,10 +789,10 @@
                             <!-- Plant Safety -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="fire-protection">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.54 PM (1).jpeg" alt="Safety Shower" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.54 PM (1).jpeg" alt="Safety Shower" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Disaster Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Emergency Decontamination Station</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Combined eyewash and shower station for rapid chemical splash response.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -798,10 +810,10 @@
                             <!-- PPE Body - Coveralls -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.45 PM.jpeg" alt="Coveralls" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.45 PM.jpeg" alt="Coveralls" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Industrial Safety Work Coveralls</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Full-body protection suit for heavy-duty industrial work and factory maintenance.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -819,10 +831,10 @@
                             <!-- Body - Lab Coat -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.45 PM (2).jpeg" alt="Lab Coat" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.45 PM (2).jpeg" alt="Lab Coat" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Arc Flash Safety Suit</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Professional blue arc flash protection suit designed for high-voltage electrical safety.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -841,10 +853,10 @@
                             <!-- PPE Hand - Blue Dotted -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.23.01 PM.jpeg" alt="Blue Dotted Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.23.01 PM.jpeg" alt="Blue Dotted Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Blue Dotted Cotton Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Premium blue dotted cotton gloves for enhanced grip and hand safety.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -863,10 +875,10 @@
                             <!-- Road Safety - Cone -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="road-safety">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.35 PM (1).jpeg" alt="Traffic Cone" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.35 PM (1).jpeg" alt="Traffic Cone" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Traffic Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Premium Reflective Traffic Cone</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">High-visibility PVC traffic cone with reflective sleeve for day and night use.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -885,10 +897,10 @@
                             <!-- PPE Head - Arc Protection -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-head">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.45 PM (2).jpeg" alt="Arc Flash Hood" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.45 PM (2).jpeg" alt="Arc Flash Hood" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Head Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Arc Flash Hood & Helmet System</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Complete head and face protection system for electrical arc flash safety.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -907,10 +919,10 @@
                             <!-- Industrial Safety - Extinguisher -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="fire-protection">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.40 PM.jpeg" alt="Fire Extinguisher" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.40 PM.jpeg" alt="Fire Extinguisher" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Fire Safety</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">DCP Powder Fire Extinguisher</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">High-performance dry chemical powder extinguisher for Class A, B, and C fires.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -928,10 +940,10 @@
                             <!-- PPE Hand - Leather -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.41 PM (1).jpeg" alt="Leather Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.41 PM (1).jpeg" alt="Leather Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Heavy Duty Leather Work Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Reinforced leather gloves for welding, construction, and heavy material handling.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -951,10 +963,10 @@
                             <!-- PPE Hand - Tuff-Lite -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.56 PM.jpeg" alt="Nitrile Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.56 PM.jpeg" alt="Nitrile Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Tuff-N-Lite Nitrile Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Industrial grade nitrile gloves for chemical resistance and superior hand protection.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -973,10 +985,10 @@
                             <!-- PPE Hand - Nitrile -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.58 PM (3).jpeg" alt="Nitrile Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.58 PM (3).jpeg" alt="Nitrile Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Premium Nitrile Coated Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Black nitrile palm coating for oily conditions and superior abrasion resistance.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -994,10 +1006,10 @@
                             <!-- Industrial Safety - First Aid Cabinet -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="disaster-protection">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.43 PM (2).jpeg" alt="First Aid Cabinet" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.43 PM (2).jpeg" alt="First Aid Cabinet" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Disaster Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Large First Aid Storage Cabinet</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Wall-mountable metallic cabinet for storing bulk medical supplies and emergency kits.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1015,10 +1027,10 @@
                             <!-- Road Safety - Convex Mirror -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="road-safety">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.44 PM (1).jpeg" alt="Convex Mirror" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.44 PM (1).jpeg" alt="Convex Mirror" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Traffic Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Industrial Convex Security Mirror</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Wide-angle polycarbonate mirror for blind spots and driveway safety.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1036,10 +1048,10 @@
                             <!-- PPE Body - Apron -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.47 PM.jpeg" alt="Safety Apron" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.47 PM.jpeg" alt="Safety Apron" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">White Industrial Lab Coat</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Professional white lab coat for laboratory, medical, and cleanroom environments.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1059,10 +1071,10 @@
                             <!-- Industrial Safety - Barrier -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="road-safety">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.48 PM (1).jpeg" alt="Safety Barrier" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.48 PM (1).jpeg" alt="Safety Barrier" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Site Safety</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Expandable Safety Barrier</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Portable and expandable barrier for temporary crowd control and site restriction.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1080,10 +1092,10 @@
                             <!-- PPE Body - Lab Coat -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.49 PM.jpeg" alt="Lab Coat" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.49 PM.jpeg" alt="Lab Coat" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Disposable Polypropylene Lab Coat</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Lightweight and breathable protective coat for laboratory and cleanroom use.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1101,10 +1113,10 @@
                             <!-- Industrial Safety - Wheel Chock -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="fire-protection">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.49 PM (1).jpeg" alt="Wheel Chock" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.49 PM (1).jpeg" alt="Wheel Chock" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Vehicle Safety</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Heavy Duty Rubber Wheel Chock</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Durable rubber chocks with built-in handle for preventing vehicle movement.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1122,10 +1134,10 @@
                             <!-- PPE Body - Safety Suit -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.50 PM.jpeg" alt="Coverall" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.50 PM.jpeg" alt="Coverall" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Industrial Leather Welding Apron</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Heavy-duty heat resistant split leather apron for welding and grinding work.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1145,10 +1157,10 @@
                             <!-- PPE Hand - Nitrile Black -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.35 PM (2).jpeg" alt="Nitrile Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.35 PM (2).jpeg" alt="Nitrile Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Premium Black Nitrile Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">High-performance black nitrile gloves for superior grip and industrial protection.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1167,10 +1179,10 @@
                             <!-- Road Safety - Warning Lamp -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="road-safety">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.46 PM.jpeg" alt="Warning Lamp" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.46 PM.jpeg" alt="Warning Lamp" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Traffic Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">LED Solar Warning Lamp</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Automatic solar-powered flashing LED lamp for road barriers and construction sites.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1189,10 +1201,10 @@
                             <!-- PPE Head - Chemical Hood -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-head">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.46 PM (1).jpeg" alt="Chemical Hood" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.46 PM (1).jpeg" alt="Chemical Hood" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Head Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Integrated Chemical Splash Hood</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Heavy-duty chemical resistant hood with integrated visor for full head protection.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1210,10 +1222,10 @@
                             <!-- PPE Hand - Inspection -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.36 PM (1).jpeg" alt="Cotton Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.36 PM (1).jpeg" alt="Cotton Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Nylon Cotton Inspection Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Lightweight white cotton gloves for precision handling and inspection tasks.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1231,10 +1243,10 @@
                             <!-- PPE Hand - Latex Work -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.36 PM.jpeg" alt="Latex Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.36 PM.jpeg" alt="Latex Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Yellow Nitrile Coated Work Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Highly durable nitrile coated gloves for superior grip in tough industrial environments.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1252,10 +1264,10 @@
                             <!-- PPE Hand - Chemical Resistance -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.38 PM (1).jpeg" alt="Chemical Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.38 PM (1).jpeg" alt="Chemical Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Heavyweight Chemical Resistant Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Extra-long rubber gloves for safe handling of hazardous liquids and chemicals.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1273,10 +1285,10 @@
                             <!-- Industrial Safety - Fire Hose -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="fire-protection">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.40 PM (1).jpeg" alt="Fire Hose" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.40 PM (1).jpeg" alt="Fire Hose" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Fire Safety</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Reinforced Industrial Fire Hose</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">High-pressure canvas fire hose with quick-connect couplings for industrial fire hydrants.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1294,10 +1306,10 @@
                             <!-- PPE Hand - Cut Resistant -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.41 PM (2).jpeg" alt="Cut Resistant Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.41 PM (2).jpeg" alt="Cut Resistant Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Level 5 Cut Resistant Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">HPPE fiber gloves providing maximum protection against sharp edges and blades.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1315,10 +1327,10 @@
                             <!-- PPE Hand - Nitrile Chemical -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.43 PM.jpeg" alt="Chemical Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.43 PM.jpeg" alt="Chemical Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Nitrile Chemical Resistant Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Heavy-duty nitrile gloves providing excellent protection against oils and solvents.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1336,10 +1348,10 @@
                             <!-- PPE Hand - Blue Nitrile -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.39 PM (1).jpeg" alt="Blue Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.39 PM (1).jpeg" alt="Blue Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Blue Heavy-Duty Nitrile Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Chemical resistant blue gloves for industrial cleaning and handling tasks.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1357,10 +1369,10 @@
                             <!-- PPE Body - Work Suit -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="safety-wears">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.50 PM (1).jpeg" alt="Work Suit" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.50 PM (1).jpeg" alt="Work Suit" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Safety Wears</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Industrial Safety Apron</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Yellow heavy-duty industrial apron for splash protection and general shop safety.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1379,10 +1391,10 @@
                             <!-- PPE Hand - Catalog -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.52 PM.jpeg" alt="Gloves Catalog" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.52 PM.jpeg" alt="Gloves Catalog" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Industrial Safety Gloves Catalog</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Comprehensive range of specialized safety gloves including Kevlar, Nitrile, and Anti-Impact.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1401,10 +1413,10 @@
                             <!-- Road Safety - Speed Bumps -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="road-safety">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.55 PM.jpeg" alt="Speed Bumps" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.55 PM.jpeg" alt="Speed Bumps" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Road Safety</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Portable Speed Bumps</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Foldable and portable speed bumps for temporary traffic control and site safety.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1422,10 +1434,10 @@
                             <!-- PPE Hand - PVC Coated -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.58 PM (1).jpeg" alt="PVC Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.58 PM (1).jpeg" alt="PVC Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">PVC Coated Rough Finish Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Red PVC gloves with rough finish for better grip in oily and wet conditions.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
@@ -1443,10 +1455,10 @@
                             <!-- PPE Hand - Specialized -->
                             <div class="product-card group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col" data-category="ppe-hand">
                                 <div class="relative aspect-square bg-gray-50 overflow-hidden">
-                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.41 PM (2).jpeg" alt="Specialized Gloves" class="absolute inset-0 w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110">
+                                    <img src="assets/image/WhatsApp Image 2026-04-24 at 8.22.41 PM (2).jpeg" alt="Specialized Gloves" class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-110">
                                     <div class="absolute top-4 left-4 bg-safety-neon-orange text-white text-[10px] font-black px-3 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Hand Protection</div>
                                 </div>
-                                <div class="p-8 flex flex-col flex-1">
+                                <div class="p-6 flex flex-col flex-1">
                                     <h3 class="text-xl font-bold text-safety-charcoal mb-3 group-hover:text-safety-neon-orange transition-colors">Heat Resistant Welding Gloves</h3>
                                     <p class="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-2">Premium split leather gloves designed for heat resistance and sparks protection.</p>
                                     <div class="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
