@@ -20,6 +20,12 @@
     color: var(--safety-yellow) !important;
 }
 
+/* Fix for icons disappearing on hover (Yellow icon on Yellow background) */
+.group:hover .group-hover\:text-safety-charcoal {
+    color: var(--safety-charcoal) !important;
+    stroke: var(--safety-charcoal) !important;
+}
+
 .border-safety-neon-orange,
 .border-safety-orange,
 .hover\:border-safety-neon-orange:hover,
