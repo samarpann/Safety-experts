@@ -31,10 +31,35 @@
                     <a href="brands.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">Brands</a>
                     <a href="contact.html" class="text-sm font-bold text-gray-700 hover:text-safety-neon-orange transition-colors uppercase tracking-wider">Contact</a>
                     <a href="contact.html" class="px-6 py-2.5 bg-safety-neon-orange text-white text-sm font-bold rounded-lg hover:bg-safety-charcoal transition-all shadow-lg shadow-safety-neon-orange/20 uppercase tracking-wider">Get Quote</a>
-                </div>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 md:hidden hover:text-safety-neon-orange transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
             </div>
         </div>
     </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white hidden flex-col transition-all duration-300" style="z-index: 9999;">
+        <div class="flex justify-between items-center p-6 border-b border-gray-100">
+            <img src="assets/logo.jpg" alt="Logo" class="h-10 w-auto" />
+            <button id="close-menu" class="p-2 text-gray-700 hover:text-safety-neon-orange transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+        </div>
+        <nav class="flex flex-col p-8 gap-6 overflow-y-auto">
+            <a href="index.html" class="text-2xl font-bold text-gray-800 hover:text-safety-neon-orange transition-all uppercase tracking-tight">HOME</a>
+            <a href="about.html" class="text-2xl font-bold text-gray-800 hover:text-safety-neon-orange transition-all uppercase tracking-tight">ABOUT US</a>
+            <a href="products.html" class="text-2xl font-bold text-gray-800 hover:text-safety-neon-orange transition-all uppercase tracking-tight">PRODUCTS</a>
+            <a href="applications.html" class="text-2xl font-bold text-safety-neon-orange transition-all uppercase tracking-tight">APPLICATIONS</a>
+            <a href="brands.html" class="text-2xl font-bold text-gray-800 hover:text-safety-neon-orange transition-all uppercase tracking-tight">BRANDS</a>
+            <a href="contact.html" class="text-2xl font-bold text-gray-800 hover:text-safety-neon-orange transition-all uppercase tracking-tight">CONTACT</a>
+            
+            <div class="mt-4 pt-8 border-t border-gray-100">
+                <a href="contact.html" class="flex items-center justify-center w-full py-4 bg-safety-neon-orange text-white font-bold rounded-xl shadow-lg shadow-safety-neon-orange/20 uppercase tracking-wider">Get Quote</a>
+            </div>
+        </nav>
+    </div>
 
     <main class="flex-1">
         <!-- Hero Section -->
@@ -166,6 +191,7 @@
         </svg>
     </a>
 
+    <script src="assets/js/theme.js"></script>
     <script src="assets/js/whatsapp-query.js"></script>
 </body>
 </html>
